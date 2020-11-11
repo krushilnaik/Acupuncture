@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+
+		<title>AHC - Services</title>
+
+		<!-- Internal CSS -->
+		<link rel="stylesheet" href="assets/css/colors.css">
+		<link rel="stylesheet" href="assets/css/services-offered.css">
+		<link rel="stylesheet" href="assets/css/preloader.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+
+		<!-- External JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!-- Dark/Light Mode -->
+		<button id="reload-css" class="light">
+			<img src="assets/images/icons/dark-mode.png">
+		</button>
+
+		<script src="assets/js/theme-handler.js"></script>
+
+		<!-- PreLoader -->
+		<div class='preloader'>
+			<div class="preloader-inner"></div>
+		</div>
+
+		<script>
+			window.onload = function() {
+				$('.preloader').delay(500).fadeOut('slow');
+			}
+		</script>
+
+		<!-- Top stuff -->
+		<section class="heading center">
+			<!-- Logo & slogan -->
+			<a class="logo company-name" href="index.html">Acupuncture Herb Center</a>
+			<a class="logo graphic center" href="index.html"></a>
+			<div id="slogan" class="center">Healing for the mind, body, and spirit.</div>
+
+			<hr>
+
+			<!-- Site navigation -->
+			<div id="navigation">
+				<div id="insite-navigation" class="nav-group">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="services-offered.html">Services Offered</a>
+					<a class="nav-link" href="shop.html">Diseases Treated</a>
+					<a class="nav-link" href="shop.html">Infertility</a>
+					<a class="nav-link" href="intake-form.html">New Patients</a>
+					<a class="nav-link" href="shop.html">FAQ</a>
+				</div>
+			</div>
+
+			<div id="todays-hours">
+				<svg width="calc(1em + 5px)" height="calc(1em + 5px)" viewBox="0 0 16 16" fill="currentColor" class="clock-icon" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+					<path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+				</svg>
+				<span id="hours"></span>
+				<script>
+					const todaysDate = new Date();
+					const openHours = [
+						"Sunday: Closed",
+						"Monday: 3pm–6pm",
+						"Tuesday: 9am–7pm",
+						"Wednesday: 9am–7pm",
+						"Thursday: 12pm–6pm",
+						"Friday: 9am–7pm",
+						"Saturday: 9am–2pm"
+					];
+
+					let todaysHours = document.getElementById("hours");
+
+					todaysHours.innerHTML = openHours[todaysDate.getDay()];
+				</script>
+			</div>
+		</section>
+
+		<div style="height: 80px;"></div>
+
+		<section id="services-offered">
+			<div id="acupuncture" class="service">
+				<h3>Acupuncture</h3>
+				Acupuncture is an ancient Asian therapy that consists of stimulating designated points with needles to restore and balance the body’s energy, or Qi (pronounced chee).
+				These are gateways through which the practitioner exerts influence upon organs and functions, stimulating and activating the body’s self-healing mechanisms.
+				It is a part of Traditional Chinese Medicine (TCM), which also includes the application of electrical stimulation, heat, acupressure, diet, and Herbal Medicine.
+			</div>
+
+			<div id="herbal-medicine" class="service">
+				<h3>Herbal Medicine</h3>
+				Herbal Medicine is the main treatment method within Traditional Chinese Medicine.
+				Western folk herbalists primarily treat disease or generalized symptoms, such as headaches, runny nose, etc.
+				Traditional Chinese Medicine is based on individual diagnosis.
+				Chinese herbs treat the underlying condition as defined by traditional diagnosis, and rarely cause unwanted side-effects.
+				Chinese herbs are usually combined in formulas to boost their individual properties and actions.
+				Symptoms and signs are matched with therapeutic effects, imitating the particular conditions and needs of each patient.
+				Chinese herbal medicine may include vegetable, animal, and mineral ingredients.
+				Leaves, flowers, twigs, stems, roots, tubers, rhizome and bark are among the parts of the vegetable used.
+				Most of the components of Chinese Herbal Medicine have a very low toxicity compared to even common, over-the-counter Western drugs.
+				When they are prescribed according to a correct TCM pattern diagnosis, they should have few, if any side effects.
+			</div>
+
+			<div id="ear-candling" class="service">
+				<h3>Ear Candling</h3>
+				Ear candling is a natural way to clean out accumulated wax and white flakiness’ from the ears.
+				The accumulations withdrawn from your ears may be months or even years old.
+				Ear candles are a custom made design from natural fibers and tapered to precise specifications.
+				Ear candling involves placing a long cylinder shaped candle into the ear which creates a low-level vacuum that draws wax and other debris out of the ear canal.
+				Some claim that impurities are removed from the inner ear, and facial sinuses all of which are connected to the canal. Claim is that ear candling can help:
+				<div class="row">
+					<ul>
+						<li>Relieve sinus pressure</li>
+						<li>Clean the ear canal</li>
+						<li>Relieve ear aches</li>
+						<li>Improve hearing</li>
+					</ul>
+					<ul>
+						<li>Help TMJ pain and stiffness</li>
+						<li>Help sinusitis</li>
+						<li>Sharpen the senses of smell & taste</li>
+						<li>Relieve vertigo</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="diagnostic-testing" class="service">
+				<h3>Diagnostic Testing</h3>
+				<b>Bio Functional Medical System</b> is a method of combining the fundamental of oriental acupuncture with modern technology.
+				Meridans on the fingers and toes are used to find deficiencies in every major organ.
+				Deficiencies in organ function are recognized through measured energetic disturbances shown in the test results.
+				All diseases begin with disturbances of the energetic system.
+			</div>
+
+			<div id="facial-rejuvenation" class="service">
+				<h3>Facial Rejuvenation</h3>
+				Facial Rejuvenation is a painless, non-surgical method of reducing signs of the aging process.
+				Facial Rejuvenation can sometimes be referred to as an Acupuncture Facelift.
+				It is a rejuvenation process designed to help the whole body look and feel younger.
+				Facial Rejuvenation treatment is based on Oriental Medicine.
+				It involves the insertion of thin needles into specified areas of the face, ears, neck, hands, and legs along channels of energy called Qi.
+				These points are chosen to manipulate the movement of energy in the body according to the individual's needs.
+			</div>
+
+			<div id="cupping" class="service">
+				<h3>Cupping</h3>
+				Cupping is a therapy designed to stimulate the flow of blood and Qi within the superficial muscle layers.
+				It is used for sore muscles, tension, neck pain and the common cold.
+				In this therapy, your acupuncturist will place small glass or plastic “cups” over specific areas on your body.
+				A vacuum is created under the cup using heat or suction.
+			</div>
+
+			<div id="tui-na" class="service">
+				<h3>Tui Na</h3>
+				Tui Na translates as “push grasp.”
+				It is a massage technique that moves Qi in various parts of the body.
+				It is used to relieve muscle pain, tension and inflammation to heal injuries.
+			</div>
+
+			<div id="moxibustion" class="service">
+				<h3>Moxibustion</h3>
+				Moxibustion is a treatment that uses herbs called mugwort.
+				It may be burned on the handle of the needle, above the skin, on salt or on a slice of ginger.
+				This is used to “warm” acupuncture points or areas in order to quicken the healing process.
+			</div>
+		</section>
+	</body>
+
+	<footer class="center">
+		<span class="copyright">©2020 by Acupuncture Herb Center</span>
+	</footer>
+</html>

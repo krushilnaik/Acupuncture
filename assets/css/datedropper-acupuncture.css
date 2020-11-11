@@ -1,0 +1,21 @@
+/*
+  INSTRUCTIONS ---------------------------------------------------------------------------------
+  
+  1. Add this stylesheet to the <head> of your pages
+     <link href="YOUR PATH/acupuncture.css" rel="stylesheet" type="text/css" />
+     
+  2. Use the file name as data-dd-theme attribute on your datedropper elements
+     <input data-dd-theme="acupuncture" />
+     
+*/
+
+div.datedropper.acupuncture {
+	--dd-color1: var(--acu-green);
+	--dd-color2: var(--acu-wallpaper);
+	--dd-color3: var(--acu-black);
+	--dd-color4: var(--acu-white);
+
+	--dd-radius: 20px;
+	/* --dd-width: 200px; */
+	--dd-shadow: 0 0 2px 0px black;
+}

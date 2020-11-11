@@ -1,0 +1,226 @@
+/*
+* * * * * * * * * * * *
+*                     *
+*  Part of EcoDesign  *
+*                     *
+* * * * * * * * * * * *
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+	cursor: default;
+	user-select: none;
+}
+
+/* * {
+	box-sizing: border-box;
+} */
+
+body {
+	margin: 0;
+	transition: all .25s;
+	background: var(--acu-wallpaper);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+	body * {
+		transition: all .25s;
+	}
+
+h1 {
+	color: var(--acu-orange);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 57px;
+	margin-bottom: 16px;
+}
+
+h3 {
+	color: var(--acu-orange);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+}
+
+hr {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+footer {
+	background-color: var(--acu-orange);
+	color: var(--acu-white);
+	border-radius: 10px;
+	width: fit-content;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 1%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.logo.graphic {
+	transition: all .3s;
+	height: 250px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: drop-shadow(1px 1px black);
+	outline: none;
+	border: none;
+}
+
+.logo.company-name {
+	transition: all .3s;
+	opacity: 0;
+	text-decoration: none;
+}
+
+#slogan {
+	font-size: 21px;
+	color: #fffacd;
+	padding: .5%;
+	text-align: center;
+	width: fit-content;
+}
+
+#navigation {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: var(--darker-than-back);
+	width: 100%;
+	height: auto;
+}
+
+.nav-group {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav-link {
+	transition: .3s;
+	font-size: 21px;
+	text-decoration: none;
+	text-align: left;
+	display: inline-block;
+	padding: 0%;
+	margin-left: 7px;
+	margin-right: 7px;
+	position: relative;
+	color: var(--acu-white);
+	width: max-content;
+	height: 60px;
+	padding: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+	.nav-link:hover {
+		background-color: var(--darker-than-back);
+	}
+	.nav-link:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 51%;
+		right: 51%;
+		bottom: 0;
+		background: var(--acu-green);
+		height: 4px;
+		transition: .25s ease-out;
+		transition-property: left, right;
+	}
+	.nav-link:hover:before,
+	.nav-link:focus:before,
+	.nav-link:active:before {
+		left: 0; right: 0;
+	}
+
+.heading {
+	position: fixed;
+	background-color: var(--acu-orange);
+	left: 0; right: 0; top: 0;
+	width: 100%;
+	height: 60px;
+	box-shadow: 0px 1px 5px black;
+	display: flex;
+	flex-direction: row;
+	z-index: 9999999;
+}
+	.heading hr,
+	.heading #slogan {
+		display: none;
+	}
+	.heading #navigation {
+		background-color: transparent;
+	}
+	.heading .logo {
+		display: inline-block;
+		text-align: left;
+	}
+		.heading .logo.graphic {
+			width: 55px;
+			height: 85%;
+			position: absolute;
+			top: 3px;
+			left: 7px;
+			z-index: 9000;
+			background-image: url("../images/icons/logo-min.png");
+		}
+		.heading .logo.company-name {
+			position: absolute;
+			opacity: 100%;
+			top: 12px;
+			left: 70px;
+			font-size: 25px;
+			color: var(--acu-white);
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+		}
+
+#todays-hours {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 23px;
+	color: var(--acu-white);
+}
+	#todays-hours .clock-icon {
+		position: relative;
+		top: 6px;
+	}
+
+#reload-css {
+	transition: all .3s;
+	position: sticky;
+	top: 100px;
+	right: 45px;
+	float: right;
+	width: 50px; height: 50px;
+	border: solid 1px red;
+	border-radius: 50%;
+	padding: 0px;
+	box-shadow: 1px 1px 5px black;
+	cursor: pointer;
+	outline: none;
+}
+	#reload-css img {
+		transition: all .3s;
+		margin: -1px;
+		width: 50px;
+		height: 50px;
+	}

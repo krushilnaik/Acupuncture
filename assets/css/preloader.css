@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import url("../css/animations.css");
+
+:root {
+	--yin-yang-dim: 175px;
+}
+
+.preloader {
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	z-index: 999999999;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--acu-wallpaper);
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+.preloader-inner {
+	display: flex;
+	align-items: center;
+	width: var(--yin-yang-dim);
+	height: var(--yin-yang-dim);
+	border-radius: 50%;
+	background: linear-gradient(black 50%, white 0);
+	animation: rotate 1.5s linear infinite;
+}
+
+.preloader-inner:before, .preloader-inner:after {
+	flex: 1;
+	border: solid calc(var(--yin-yang-dim) / 6) white;
+	height: calc(var(--yin-yang-dim) / 6);
+	border-radius: 50%;
+	transform-origin: 0 50%;
+	transform: scale(0.5);
+	background: black;
+	animation: scale 1s ease-in-out infinite alternate;
+	-webkit-box-sizing: unset;
+	box-sizing: unset;
+	content: '';
+}
+
+.preloader-inner:after {
+	border-color: black;
+	transform-origin: 100% 50%;
+	background: white;
+	animation-delay: -1s;
+}

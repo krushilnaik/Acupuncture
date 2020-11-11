@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+
+		<title>AHC - Services</title>
+
+		<!-- Internal CSS -->
+		<link rel="stylesheet" href="assets/css/colors.css">
+		<link rel="stylesheet" href="assets/css/services-offered.css">
+		<link rel="stylesheet" href="assets/css/preloader.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+
+		<!-- External JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!-- Dark/Light Mode -->
+		<button id="reload-css" class="light">
+			<img src="assets/images/icons/dark-mode.png">
+		</button>
+
+		<script src="assets/js/theme-handler.js"></script>
+
+		<!-- PreLoader -->
+		<div class='preloader'>
+			<div class="preloader-inner"></div>
+		</div>
+
+		<script>
+			window.onload = function() {
+				$('.preloader').delay(500).fadeOut('slow');
+			}
+		</script>
+
+		<!-- Top stuff -->
+		<section class="heading center">
+			<!-- Logo & slogan -->
+			<a class="logo company-name" href="index.html">Acupuncture Herb Center</a>
+			<a class="logo graphic center" href="index.html"></a>
+			<div id="slogan" class="center">Healing for the mind, body, and spirit.</div>
+
+			<hr>
+
+			<!-- Site navigation -->
+			<div id="navigation">
+				<div id="insite-navigation" class="nav-group">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="services-offered.html">Services Offered</a>
+					<a class="nav-link" href="shop.html">Diseases Treated</a>
+					<a class="nav-link" href="shop.html">Infertility</a>
+					<a class="nav-link" href="intake-form.html">New Patients</a>
+					<a class="nav-link" href="faq.html">FAQ</a>
+				</div>
+			</div>
+
+			<div id="todays-hours">
+				<svg width="calc(1em + 5px)" height="calc(1em + 5px)" viewBox="0 0 16 16" fill="currentColor" class="clock-icon" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+					<path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+				</svg>
+				<span id="hours"></span>
+				<script>
+					const todaysDate = new Date();
+					const openHours = [
+						"Sunday: Closed",
+						"Monday: 3pm–6pm",
+						"Tuesday: 9am–7pm",
+						"Wednesday: 9am–7pm",
+						"Thursday: 12pm–6pm",
+						"Friday: 9am–7pm",
+						"Saturday: 9am–2pm"
+					];
+
+					let todaysHours = document.getElementById("hours");
+
+					todaysHours.innerHTML = openHours[todaysDate.getDay()];
+				</script>
+			</div>
+		</section>
+
+		<div style="height: 80px;"></div>
+
+		<section id="services-offered">
+			<div class="service">
+				<h3>How does acupuncture work?</h3>
+				Its theoretical basis is that everyone is born with a fixed amount of energy at birth.
+				The Qi flows through the body along invisible pathways referred to as “meridians”.
+				Chinese Medicine is based on the discovery that certain areas of the skin are related to internal body organs and specific bodily functions.
+				Insertion of very fine needles, sometimes combined with electrical stimulation and heat, unblocks and stimulates energy so it flows freely again.
+			</div>
+
+			<div class="service">
+				<h3>Why do we need to feel your pulse?</h3>
+				There are 12 pulse positions on each wrist that your acupuncturist will palpate. Each position corresponds to s specific meridian and organ.
+				Your acupuncturist will be looking for 27 individual qualities that reflect overall health. If there are any problems, they may appear in the pulse.
+			</div>
+
+			<div class="service">
+				<h3>What is Qi?</h3>
+				Qi is the substance of life. As the basis of the universe’s infinite manifestations, Qi is present in all life forms.
+				Pathways of Qi run throughout the body and are known as meridians or channels. Each channel is linked to a particular organ.
+				These channels are the paths along which Qi flows, supplying life and energy to every cell.
+				When systemic Qi flow is blocked, disharmony is crested and we experience disease.
+			</div>
+
+			<div class="service">
+				<h3>Why do we need to look at your tongue?</h3>
+				The tongue is a map of the body. It reflects the general health of the organs and meridians.
+				Your acupuncturist will look at the color, shape, cracks and coating on your tongue.
+			</div>
+
+			<div class="service">
+				<h3>How many treatments are needed?</h3>
+				The number of treatments will vary from person to person.
+				Some people experience immediate relief, others may take months or even years to achieve results.
+				Chronic conditions usually take longer to resolve than acute ones. Plan a minimum of month to see significant changes.
+			</div>
+
+			<div class="service">
+				<h3>What should I expect during treatment?</h3>
+				Where the acupuncture needle has been inserted, you may experience a vague numbness, heaviness, tingling, or dull ache.
+				Sometimes people experience a sensation of energy spreading and moving around the needle. This is called the “Qi sensation”.
+				All these reactions are good and a sign that the treatment is working.
+				After treatment, you may feel energized or may experience a deep sense of relaxation and well being.
+			</div>
+		</section>
+	</body>
+
+	<footer class="center">
+		<span class="copyright">©2020 by Acupuncture Herb Center</span>
+	</footer>
+</html>

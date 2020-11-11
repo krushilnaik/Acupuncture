@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Stuff in the tabs -->
+		<title>Acupuncture Herb Center</title>
+		<link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+
+		<!-- External JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+
+		<!-- External CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+		<!-- Local CSS -->
+		<link rel="stylesheet" href="assets/css/colors.css">
+		<link rel="stylesheet" href="assets/css/animations.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/index.css">
+		<link rel="stylesheet" href="assets/css/preloader.css">
+		<link rel="stylesheet" href="assets/css/shop.css">
+	</head>
+
+	<body>
+		<!-- Dark/Light Mode -->
+		<button id="reload-css" class="light">
+			<img src="assets/images/icons/dark-mode.png">
+		</button>
+
+		<script src="assets/js/theme-handler.js"></script>
+
+		<!-- PreLoader -->
+		<div class='preloader'>
+			<div class="preloader-inner"></div>
+		</div>
+
+		<script>
+			window.onload = function() {
+				$('.preloader').delay(500).fadeOut('slow');
+			}
+		</script>
+
+		<!-- Top stuff -->
+		<section class="heading center">
+			<!-- Logo & slogan -->
+			<a class="logo company-name" href="index.html">Acupuncture Herb Center</a>
+			<a class="logo graphic center" href="index.html"></a>
+			<div id="slogan" class="center">Healing for the mind, body, and spirit.</div>
+
+			<hr>
+
+			<!-- Site navigation -->
+			<div id="navigation">
+				<div id="insite-navigation" class="nav-group">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="services-offered.html">Services Offered</a>
+					<a class="nav-link" href="shop.html">Diseases Treated</a>
+					<a class="nav-link" href="shop.html">Infertility</a>
+					<a class="nav-link" href="intake-form.html">New Patients</a>
+					<a class="nav-link" href="faq.html">FAQ</a>
+				</div>
+			</div>
+
+			<div id="todays-hours">
+				<svg width="calc(1em + 5px)" height="calc(1em + 5px)" viewBox="0 0 16 16" fill="currentColor" class="clock-icon" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+					<path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+				</svg>
+				<span id="hours"></span>
+				<script>
+					const todaysDate = new Date();
+					const openHours = [
+						"Sunday: Closed",
+						"Monday: 3pm–6pm",
+						"Tuesday: 9am–7pm",
+						"Wednesday: 9am–7pm",
+						"Thursday: 12pm–6pm",
+						"Friday: 9am–7pm",
+						"Saturday: 9am–2pm"
+					];
+
+					let todaysHours = document.getElementById("hours");
+
+					todaysHours.innerHTML = openHours[todaysDate.getDay()];
+				</script>
+			</div>
+		</section>
+
+		<div style="height: 80px;"></div>
+
+		<section id="heading-wrapper" class="center">
+			<div class="border-animation">
+				<div class="border-animation__inner">
+					<h1>Acupuncture Herb Center</h1>
+					<h3>Wayne and Cedar Knolls, NJ</h3>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main stuff -->
+		<section id="what-we-do">
+			<div id="we-do" class="center">
+				<h3>Our mission is simple</h3>
+				To bring healing to the body and mind with the technique of ancient Oriental Medicine with respect, thoughtfulness, integrity and compassion.
+				To help patients achieve the highest quality of life they can.
+				Through the use of acupuncture, tui-na, Chinese herbal medicines, and patient education, I help keep my patient's bodies and lives in balance.
+				Provide the highest quality of health care to every individual who seeks treatment with patients so they may become an active part in the healing process.
+				Continue professional development & training so that I can continue to grow & constantly provide my patients with new techniques.
+			</div>
+		</section>
+
+		<section id="staff-section" class="center"></section>
+
+		<section id="get-in-touch">
+			<form action="" method="get" class="center">
+				<input type="text" name="name" id="name" placeholder="Name"/>
+				<input type="text" name="address" id="address" placeholder="Address"/>
+				<div class="pair">
+					<input type="email" name="email" id="email" placeholder="Email"/>
+					<input type="tel" name="phone" id="phone" placeholder="Phone"/>
+				</div>
+				<input type="text" name="subject" id="subject" placeholder="Subject"/>
+				<textarea name="message" id="message" rows="10" placeholder="Type your message here..."></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+
+		<!-- External JavaScript -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+				integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				crossorigin="anonymous"></script> -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+				integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				crossorigin="anonymous"></script> -->
+
+		<!-- For development -->
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin="anonymous"></script>
+
+		<!-- For Production -->
+		<!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> -->
+		<!-- <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
+
+		<!-- Internal JavaScript -->
+		<script src="assets/js/intake-form.js"></script>
+		<script type="text/babel" src="assets/jsx/shop-mk2.jsx"></script>
+		<!-- <script src="assets/js/header.js"></script> -->
+		<!-- <script type="text/babel" src="assets/jsx/instagram.jsx"></script> -->
+	</body>
+
+	<footer class="center">
+		<span class="copyright">©2020 by Acupuncture Herb Center</span>
+	</footer>
+</html>
