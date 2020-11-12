@@ -84,7 +84,7 @@
 	position: relative;
 	background-color: var(--acu-blue);
 	border-radius: 0 25px 0 25px;
-	border: solid 3px var(--acu-red);
+	border: solid 4px var(--acu-red);
 	outline: none;
 	padding: .8%;
 	margin: 10px 20px 10px 10px;

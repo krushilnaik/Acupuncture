@@ -8,7 +8,7 @@
 	margin-right: 10%;
 	margin-bottom: 3%;
 	border-radius: 0 25px 0 25px;
-	border: solid 3px var(--acu-red);
+	border: solid 4px var(--acu-red);
 	padding: 1%;
 	box-shadow: -8px 6px 0px var(--acu-red);
 }
@@ -55,7 +55,7 @@ form {
 div[id ^= "block"] {
 	text-align: center;
 	vertical-align: middle;
-	background-color: #0000961a;
+	background-color: var(--lighter-than-back);
 	width: 90%;
 	margin-left: 5%;
 	margin-bottom: 1%;
@@ -269,10 +269,10 @@ div.datedropper.acupuncture {
 	--dd-radius: 0 25px 0 25px;
 	--dd-shadow: -8px 6px 0px var(--acu-red);
 
-	border: solid 3px var(--acu-red);
+	border: solid 4px var(--acu-red);
 }
 	div.datedropper.acupuncture:before {
-		border: solid 3px var(--acu-red);
+		border: solid 4px var(--acu-red);
 	}
 
 ::-webkit-input-placeholder {color: var(--acu-white);}
