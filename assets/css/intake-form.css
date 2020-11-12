@@ -3,20 +3,20 @@
 /* ~~~~~~~~~~~~~~~~~~~ Page Layout ~~~~~~~~~~~~~~~~~~~ */
 
 .form-section {
-	background-color: #99e699f3;
+	background-color: var(--acu-blue);
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 3%;
-	border-bottom-left-radius: 30px;
-	border-top-right-radius: 30px;
-	border: solid 3px #2e8b57;
+	border-radius: 0 25px 0 25px;
+	border: solid 3px var(--acu-red);
 	padding: 1%;
-	box-shadow: 5px 5px 1px #dd8117;
+	box-shadow: -8px 6px 0px var(--acu-red);
 }
 
 
 h3 {
 	font-family: 'Sriracha', cursive;
+	color: var(--acu-white);
 }
 
 h6[class="top"] {
@@ -55,7 +55,7 @@ form {
 div[id ^= "block"] {
 	text-align: center;
 	vertical-align: middle;
-	background-color: rgba(0, 0, 150, .1);
+	background-color: #0000961a;
 	width: 90%;
 	margin-left: 5%;
 	margin-bottom: 1%;
@@ -159,7 +159,7 @@ input {
 	display: inline-block;
 	height: 45px;
 
-	color: #f0fff0;
+	color: var(--acu-white);
 	background: #6cc091;
 
 	transition: .5s;
@@ -227,7 +227,7 @@ textarea{
 
 button {
 	color: #6cc091;
-	background-color: #f0fff0;
+	background-color: var(--acu-white);
 	/* box-shadow: inset 0 0 0 3px #2e8b57; */
 	width: 14em;
 
@@ -250,10 +250,10 @@ button {
 	letter-spacing: 2px;
 }
 	button:hover {
-		color: #f0fff0;
+		color: var(--acu-white);
 		background-color: #6cc091;
-		border: solid 3px #f0fff0;
-		/* box-shadow: inset 0 0 0 3px #f0fff0; */
+		border: solid 3px var(--acu-white);
+		/* box-shadow: inset 0 0 0 3px var(--acu-white); */
 	}
 
 	button:focus {
@@ -266,10 +266,15 @@ div.datedropper.acupuncture {
 	--dd-color3: var(--acu-black);
 	--dd-color4: var(--acu-white);
 
-	--dd-radius: 20px;
-	--dd-shadow: 0 0 2px 0px black;
-}
+	--dd-radius: 0 25px 0 25px;
+	--dd-shadow: -8px 6px 0px var(--acu-red);
 
-::-webkit-input-placeholder {color: #f0fff0;}
-:-ms-input-placeholder {color: #f0fff0;}
-::placeholder {color: #f0fff0;}
+	border: solid 3px var(--acu-red);
+}
+	div.datedropper.acupuncture:before {
+		border: solid 3px var(--acu-red);
+	}
+
+::-webkit-input-placeholder {color: var(--acu-white);}
+:-ms-input-placeholder {color: var(--acu-white);}
+::placeholder {color: var(--acu-white);}
