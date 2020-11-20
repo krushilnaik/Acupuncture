@@ -3,16 +3,38 @@
 .check-column {
 	display: flex;
 	flex-direction: column;
-	align-items: baseline;
-	justify-content: center;
-	width: max-content;
+	/* align-items: baseline; */
+	/* justify-content: left; */
+	/* width: max-content; */
+	/* padding: 0%; */
+	/* float: left; */
+	/* position: absolute; */
+	/* padding-left: 0%; */
+	width: 50%;
 }
+	.check-column > h3 {
+		text-align: center;
+		width: 100%;
+	}
+
+.check-block {
+	display: flex;
+	flex-direction: row wrap;
+	align-items: baseline;
+	justify-content: left;
+	width: max-content;
+	/* overflow: hidden; */
+}
+	/* .check-block.partition {
+		display: flex;
+		flex-direction: column;
+	} */
 
 .checkbox {
 	position: relative;
 	margin: 5px;
 	top: 50%;
-	background-color: cadetblue;
+	/* background-color: cadetblue; */
 	color: var(--acu-white);
 	font-size: 20px;
 	padding-right: 1em;
@@ -34,8 +56,11 @@
 		height: 1em;
 	}
 	.checkbox .label {
-		position: relative;
-		left: 1em;
+		/* position: relative; */
+		font-size: inherit;
+		padding-left: 1em;
+		text-align: left;
+		width: max-content;
 		margin-left: 5px;
 	}
 	.checkbox .decoy-checkbox {
@@ -59,7 +84,8 @@
 	.checkbox.check input:checked + .decoy-checkbox:before {
 		content: "";
 		position: absolute;
-		top: 2px; left: -1px;
+		top: 2px;
+		/* left: -1px; */
 		font-size: inherit;
 		width: 0.8em;
 		height: 0.45em;
@@ -68,8 +94,17 @@
 		border-bottom: solid 5px #1a928c;
 		transform: rotate(-45deg);
 	}
+	.checkbox.check input:not(:checked):hover + .decoy-checkbox {
+		background-color: #ffffff55;
+	}
 	input:hover + .decoy-checkbox {
 		background-color: #ffffff98;
+	}
+	.checkbox.radio {
+		margin-right: 3%;
+	}
+	.checkbox.radio input + .decoy-checkbox {
+		border-radius: 50%;
 	}
 	.checkbox.radio input:not(:checked):hover + .decoy-checkbox {
 		background-color: #ffffff55;
@@ -77,3 +112,13 @@
 	.checkbox.radio input:checked + .decoy-checkbox {
 		background-color: #1a928c;
 	}
+
+.checkbox.radio input:checked + .mild {
+	background-color: #f0e68c;
+}
+.checkbox.radio input:checked + .moderate {
+	background-color: #f08080;
+}
+.checkbox.radio input:checked + .strong {
+	background-color: #eb1f48;
+}

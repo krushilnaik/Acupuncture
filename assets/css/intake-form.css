@@ -2,6 +2,10 @@
 
 /* ~~~~~~~~~~~~~~~~~~~ Page Layout ~~~~~~~~~~~~~~~~~~~ */
 
+* {
+	color: var(--acu-white);
+}
+
 .form-section {
 	background-color: var(--acu-blue);
 	margin-left: 10%;
@@ -15,6 +19,7 @@
 
 
 h3 {
+	/* text-align: center; */
 	font-family: 'Sriracha', cursive;
 	color: var(--acu-white);
 }
@@ -53,14 +58,20 @@ form {
 	}
 
 div[id ^= "block"] {
-	text-align: center;
-	vertical-align: middle;
+	/* text-align: center; */
+	/* vertical-align: middle; */
 	background-color: var(--lighter-than-back);
-	width: 90%;
-	margin-left: 5%;
-	margin-bottom: 1%;
+	/* width: 95%; */
+	/* align-self: center; */
+	/* margin-left: 5%; */
+	/* margin-bottom: 1%; */
 	border-radius: 10px;
+	margin: 1%;
+	padding: .5%;
 }
+	div[id ^= "block"] .inline {
+		display: inline;
+	}
 
 form .textcolumn {
 	display: block;
@@ -88,6 +99,7 @@ form .form-group {
 	text-align: center;
 	width: 100%;
 	margin: 0;
+	position: relative;
 }
 	form .form-group .field.left {
 		width: fit-content;

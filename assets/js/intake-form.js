@@ -136,15 +136,50 @@ ssn_field = document.querySelector("#ssn");
 
 if (ssn_field) {
 	ssn_field.addEventListener("input", function(event) {
-		if (event.inputType == "deleteContentBackward" && ssn_field.value.endsWith(" - ")) {
-			ssn_field.value = ssn_field.value.slice(0, -3);
-			return;
+		if (event.inputType == "deleteContentBackward") {
+			// if (this.value.endsWith(/ -[\s]*/)) {
+			if (/ -[\s]*$/.test(this.value)) {
+				this.value = this.value.slice(0, -3);
+				return;
+			}
 		}
+		// if (event.inputType == "deleteContentBackward" && ssn_field.value.endsWith(" - ")) {
+		// 	ssn_field.value = ssn_field.value.slice(0, -3);
+		// 	return;
+		// }
 
 		liveNumberFormat(this, "000 - 00 - 0000", " - ");
 	});
 }
 
+
+/**************************
+*                         *
+*   DOB live-formatting   *
+*                         *
+***************************/
+
+// 00 / 00 / 0000
+
+dob = document.querySelector("#dateofbirth");
+
+if (dob) {
+	dob.addEventListener("input", function(event) {
+		if (event.inputType == "deleteContentBackward") {
+			// if (this.value.endsWith(/ -[\s]*/)) {
+			if (/ \/[\s]*$/.test(this.value)) {
+				this.value = this.value.slice(0, -3);
+				return;
+			}
+		}
+		// if (event.inputType == "deleteContentBackward" && ssn_field.value.endsWith(" - ")) {
+		// 	ssn_field.value = ssn_field.value.slice(0, -3);
+		// 	return;
+		// }
+
+		liveNumberFormat(this, "00 / 00 / 0000", " / ");
+	});
+}
 
 
 /******************************
@@ -155,7 +190,7 @@ if (ssn_field) {
 
 
 phone_fields = document.querySelectorAll(`input[type="tel"]`);
-console.log(phone_fields);
+// console.log(phone_fields);
 
 if (phone_fields) {
 	phone_fields.forEach(function(field) {
@@ -169,7 +204,8 @@ if (phone_fields) {
 			// 	return;
 			// }
 			if (event.inputType == "deleteContentBackward") {
-				if (this.value.endsWith(/ -[\s]*/)) {
+				// if (this.value.endsWith(/ -[\s]*/)) {
+				if (/ -[\s]*$/.test(this.value)) {
 					this.value = this.value.slice(0, -3);
 					return;
 				}

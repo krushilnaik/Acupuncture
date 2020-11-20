@@ -27,8 +27,8 @@
 		<!-- External CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css"
-				integrity="sha512-PMjWzHVtwxdq7m7GIxBot5vdxUY+5aKP9wpKtvnNBZrVv1srI8tU6xvFMzG8crLNcMj/8Xl/WWmo/oAP/40p1g==" crossorigin="anonymous" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css"
+				integrity="sha512-PMjWzHVtwxdq7m7GIxBot5vdxUY+5aKP9wpKtvnNBZrVv1srI8tU6xvFMzG8crLNcMj/8Xl/WWmo/oAP/40p1g==" crossorigin="anonymous" /> -->
 
 		<!-- Internal CSS -->
 		<link rel="stylesheet" href="assets/css/colors.css">
@@ -39,7 +39,6 @@
 		<link rel="stylesheet" href="assets/css/selector.css">
 		<link rel="stylesheet" href="assets/css/checkbox.css">
 		<link rel="stylesheet" href="assets/css/drawboard.css">
-		<!-- <link rel="stylesheet" href="assets/css/datedropper-acupuncture.css"> -->
 	</head>
 
 	<body>
@@ -114,14 +113,14 @@
 
 				<!-- Row 1 -->
 				<div id="block-1-row-1">
-					<div class="field">
-						<input type="text" id="last-name" name="last-name" placeholder="Last Name">
-					</div>
-					<div class="field">
-						<input type="text" id="first-name" name="first-name" placeholder="First Name">
-					</div>
-					<div class="field">
-						<input type="text" id="appointment" placeholder="Schedule appointment"/>
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="last-name" name="last-name" placeholder="Last Name">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="first-name" name="first-name" placeholder="First Name">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="appointment" placeholder="Schedule appointment"/>
 						<script>
 							$('#appointment').dateDropper({
 								theme: 'acupuncture',
@@ -135,72 +134,60 @@
 								startFromMonday: false
 							});
 						</script>
-					</div>
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 2 -->
 				<div id="block-1-row-2">
-					<div class="field">
-						<input type="text" id="address" name="address" placeholder="Address">
-					</div>
-					<div class="field">
-						<input type="text" id="city" name="city" placeholder="City">
-					</div>
-					<div class="field">
-						<input type="text" state" id="usa-state" name="usa-state" placeholder="State">
-					</div>
-					<div class="field">
-						<input type="text" id="zip-code" name="zip-code" placeholder="ZIP Code">
-					</div>
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="address" name="address" placeholder="Address">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="city" name="city" placeholder="City">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" state" id="usa-state" name="usa-state" placeholder="State">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="zip-code" name="zip-code" placeholder="ZIP Code">
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 3 -->
 				<div id="block-1-row-3">
-					<div class="field">
-						<input type="tel" id="homephone" name="homephone" placeholder="Home Phone:">
-					</div>
-					<div class="field">
-						<input type="tel" id="workphone" name="workphone" placeholder="Work Phone:">
-					</div>
-					<div class="field">
-						<input type="tel" id="cellphone" name="cellphone" placeholder="Cell Phone:">
-					</div>
+					<!-- <div class="field"> -->
+						<input class="inline" type="tel" id="homephone" name="homephone" placeholder="Home Phone:">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="tel" id="workphone" name="workphone" placeholder="Work Phone:">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="tel" id="cellphone" name="cellphone" placeholder="Cell Phone:">
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 4 -->
 				<div id="block-1-row-4">
-					<div class="field">
-						<input type="text" id="dateofbirth" placeholder="Date of Birth (DOB)"/>
-						<script>
-							$('#dateofbirth').dateDropper({
-								theme: 'acupuncture',
-								large: true,
-								largeDefault: true,
-								largeOnly: true,
-								lock: 'to',
-								jump: 5,
-								startFromMonday: false,
-								maxYear: (new Date()).getFullYear()
-							});
-						</script>
-					</div>
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="dateofbirth" placeholder="Date of Birth (DOB)"/>
+					<!-- </div> -->
 
-					<div class="field">
-						<input type="text" id="ssn" name="ssn" placeholder="Social Security Number">
-					</div>
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="ssn" name="ssn" placeholder="Social Security Number">
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 5 -->
 				<div id="block-1-row-5">
-					<div class="field">
-						<input type="text" id="age" name="age" placeholder="Age:">
-					</div>
-					<div class="field">
-						<div class="selector">
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="age" name="age" placeholder="Age:">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<div class="inline selector">
 							<div class="custom-select" id="sex">
 								<select>
 									<option value="empty">Sex:</option>
@@ -209,9 +196,9 @@
 								</select>
 							</div>
 						</div>
-					</div>
-					<div class="field">
-						<input type="text" id="height" name="height" placeholder="Height:"/>
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="height" name="height" placeholder="Height:"/>
 						<div class="custom-select units">
 							<select>
 								<option value="empty">Units:</option>
@@ -219,9 +206,9 @@
 								<option value="centimeters">centimeters</option>
 							</select>
 						</div>
-					</div>
-					<div class="field">
-						<input type="text" id="weight" name="weight" placeholder="Weight">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="weight" name="weight" placeholder="Weight">
 						<div class="custom-select units">
 							<select>
 								<option value="empty">Units:</option>
@@ -229,16 +216,16 @@
 								<option value="kilograms">kilograms</option>
 							</select>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 6 -->
 				<div id="block-1-row-6">
-					<div class="field">
-						<input type="text" id="occupation" name="occupation" placeholder="Occupation">
-					</div>
-					<div class="field">
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="occupation" name="occupation" placeholder="Occupation">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
 						<div class="custom-select" id="marital-status">
 							<select>
 								<option value="empty">Single or Married?</option>
@@ -246,69 +233,55 @@
 								<option value="married">Married</option>
 							</select>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 7 -->
 				<div id="block-1-row-7">
-					<div class="field">
-						<input type="email" id="patient-email" name="patient-email" placeholder="Email:">
-					</div>
-					<div class="field">
-						<input type="text" id="referral" name="referral" name="referral" placeholder="Referral: (if applicable)">
-					</div>
+					<!-- <div class="field"> -->
+						<input class="inline" type="email" id="patient-email" name="patient-email" placeholder="Email:">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="referral" name="referral" name="referral" placeholder="Referral: (if applicable)">
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 8 -->
 				<div id="block-1-row-9">
-					<div class="field">
-						<input type="text" id="emergency-name" name="emergency-name" placeholder="Emergency contact name">
-					</div>
-					<div class="field">
-						<input type="tel" id="emergency-number" name="emergency-number" placeholder="Emergency phone number">
-					</div>
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="emergency-name" name="emergency-name" placeholder="Emergency contact name">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="tel" id="emergency-number" name="emergency-number" placeholder="Emergency phone number">
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 9 -->
 				<div id="block-1-row-9">
-					<div class="field">
-						<input type="text" id="family-physician" name="family-physician" placeholder="Family Physician">
-					</div>
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="family-physician" name="family-physician" placeholder="Family Physician">
+					<!-- </div> -->
 				</div>
 
 
 				<!-- Row 10 -->
 				<div id="block-1-row-10">
-					<div class="field">
-						<input type="text" id="policy-holder" name="policy-holder" placeholder="Insurance Policy Holder">
-					</div>
-					<div class="field">
-						<input type="text" id="ph-dateofbirth" placeholder="Policy Holder DOB"/>
-						<script>
-							$('#ph-dateofbirth').dateDropper({
-								theme: 'acupuncture',
-								large: true,
-								largeDefault: true,
-								largeOnly: true,
-								lock: 'to',
-								jump: 5,
-								startFromMonday: false
-							});
-						</script>
-					</div>
-
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="policy-holder" name="policy-holder" placeholder="Insurance Policy Holder">
+					<!-- </div> -->
+					<!-- <div class="field"> -->
+						<input class="inline" type="text" id="ph-dateofbirth" placeholder="Policy Holder DOB"/>
+					<!-- </div> -->
 				</div>
 
 				<!-- Row 11 -->
-				<div id="block-1-row-11">
-					<div class="checkbox check">
-						<div class="label">I've tried acupuncture before</div>
-						<input type="checkbox" id="have-tried">
-						<div class="decoy-checkbox"></div>
-					</label>
+				<div class="check-column checkbox check">
+					<div class="label">I've tried acupuncture before</div>
+					<input class="inline" type="checkbox" id="have-tried">
+					<div class="decoy-checkbox"></div>
 				</div>
 			</form>
 		</section>
@@ -326,68 +299,64 @@
 			<h3>Patient Medical History (Please fill out all that apply)</h3>
 			<form action="#" method="post">
 				<div class="form-group">
-					<!-- Left side checkboxes -->
-					<!-- <div class="field left"> -->
-						<div class="check-column">
-							<div class="checkbox check">
-								<div class="label">Allergies</div>
-								<input type="checkbox" id="patient-allergies">
-								<div class="decoy-checkbox circle"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Cancer</div>
-								<input type="checkbox" id="patient-cancer">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Diabetes</div>
-								<input type="checkbox" id="patient-diabetes">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Hepatitis</div>
-								<input type="checkbox" id="patient-hepatitis">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">High/low blood pressure</div>
-								<input type="checkbox" id="patient-hbp">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Heart disease</div>
-								<input type="checkbox" id="patient-heart-disease">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Seizure</div>
-								<input type="checkbox" id="patient-seizure">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Rheumatic fever</div>
-								<input type="checkbox" id="patient-rheumatic-fever">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Venereal disease</div>
-								<input type="checkbox" id="venereal-disease">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Thyroid disease</div>
-								<input type="checkbox" id="patient-thyroid-disease">
-								<div class="decoy-checkbox"></div>
-							</div>
-							<div class="checkbox check">
-								<div class="label">Birth trauma (prolonged labor, forceps delivery, etc.)</div>
-								<input type="checkbox" id="patient-birth-trauma">
-								<div class="decoy-checkbox"></div>
-							</div>
+					<div class="check-column">
+						<div class="checkbox check">
+							<div class="label">Allergies</div>
+							<input class="inline" type="checkbox" id="patient-allergies">
+							<div class="decoy-checkbox"></div>
 						</div>
-					<!-- </div> -->
+						<div class="checkbox check">
+							<div class="label">Cancer</div>
+							<input class="inline" type="checkbox" id="patient-cancer">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Diabetes</div>
+							<input class="inline" type="checkbox" id="patient-diabetes">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Hepatitis</div>
+							<input class="inline" type="checkbox" id="patient-hepatitis">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">High/low blood pressure</div>
+							<input class="inline" type="checkbox" id="patient-hbp">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Heart disease</div>
+							<input class="inline" type="checkbox" id="patient-heart-disease">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Seizure</div>
+							<input class="inline" type="checkbox" id="patient-seizure">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Rheumatic fever</div>
+							<input class="inline" type="checkbox" id="patient-rheumatic-fever">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Venereal disease</div>
+							<input class="inline" type="checkbox" id="venereal-disease">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Thyroid disease</div>
+							<input class="inline" type="checkbox" id="patient-thyroid-disease">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Birth trauma (prolonged labor, forceps delivery, etc.)</div>
+							<input class="inline" type="checkbox" id="patient-birth-trauma">
+							<div class="decoy-checkbox"></div>
+						</div>
+					</div>
 
-					<!-- Right side text boxes -->
 					<div class="field right">
 						<div class="textcolumn">
 							<textarea id="additional-med-history" rows="7" placeholder="Describe other relevant medical history"></textarea>
@@ -402,75 +371,57 @@
 			<h3>Family Medical History</h3>
 			<form action="#" method="post">
 				<div class="form-group">
-					<div class="field left">
-						<div class="column">
-							<!-- <h3>My family has history with...</h3> -->
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Allergies</div>
-									<input type="checkbox" id="family-allergies">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Cancer</div>
-									<input type="checkbox" id="family-cancer">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Seizures</div>
-									<input type="checkbox" id="family-seizures">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Diabetes</div>
-									<input type="checkbox" id="family-diabetes">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Heart Disease</div>
-									<input type="checkbox" id="family-heart-disease">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
-								<div class="checkbox check" id="family-stroke">
-									<div class="label">Stroke</div>
-									<input type="checkbox">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
-								<div class="checkbox check" id="family-asthma">
-									Asthma
-									<input type="checkbox">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
-								<div class="checkbox check" id="family-hbp">
-									High/low blood pressure
-									<input type="checkbox">
-									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
+					<div class="check-column">
+						<div class="checkbox check">
+							<div class="label">Allergies</div>
+							<input class="inline" type="checkbox" id="family-allergies">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Cancer</div>
+							<input class="inline" type="checkbox" id="family-cancer">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Seizures</div>
+							<input class="inline" type="checkbox" id="family-seizures">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Diabetes</div>
+							<input class="inline" type="checkbox" id="family-diabetes">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Heart Disease</div>
+							<input class="inline" type="checkbox" id="family-heart-disease">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Stroke</div>
+							<input class="inline" type="checkbox" id="family-stroke">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">Asthma</div>
+							<input class="inline" type="checkbox" id="family-asthma">
+							<div class="decoy-checkbox"></div>
+						</div>
+						<div class="checkbox check">
+							<div class="label">High/low blood pressure</div>
+							<input class="inline" type="checkbox" id="family-hbp">
+							<div class="decoy-checkbox"></div>
 						</div>
 					</div>
 
 					<div class="field right">
-						<textarea id="other-family-med-history" rows="10" placeholder="List other hereditary history here."></textarea>
+						<div class="textcolumn">
+							<textarea id="other-family-med-history" rows="7" placeholder="List other hereditary history here."></textarea>
+						</div>
 					</div>
 				</div>
 			</form>
 		</section>
-
 
 		<section id="occupational" class="form-section">
 			<h3>Occupation-related factors</h3>
@@ -485,9 +436,7 @@
 
 				<!-- Row 1 -->
 				<h6>Physical Activity</h6>
-				<!-- <div class="field"> -->
 				<textarea id="exercise-patterns" rows="10" placeholder="How physically active are you? (e.g. going to the gym, doing yoga, etc.)"></textarea>
-				<!-- </div> -->
 
 				<!-- Row 2 -->
 				<h6>Diet</h6>
@@ -499,40 +448,38 @@
 
 				<!-- Row 3 -->
 				<h6>Habits</h6>
-				<div class="checkbox block" style="width: 40%;">
-					<h3>I often have...</h1>
+				<div class="check-block">
+					<h3>I often have...</h3>
 					<div class="row">
-						<div class="field">
-							<div class="checkbox check">
-								<div class="label">Coffee, tea, or soda</div>
-								<input type="checkbox" name="soft-drinks">
-								<div class="decoy-checkbox"></div>
-							</div>
-						</div>
-						<div class="field">
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Alcohol</div>
-								<input type="checkbox" name="alcohol">
+								<input class="inline" type="checkbox" name="alcohol">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
+							<div class="checkbox check">
+								<div class="label">Coffee, tea, or soda</div>
+								<input class="inline" type="checkbox" name="soft-drinks">
+								<div class="decoy-checkbox"></div>
+							</div>
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Cigarettes</div>
-								<input type="checkbox" name="cigarettes">
+								<input class="inline" type="checkbox" name="cigarettes">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 				</div>
 			</form>
 
 			<form action="#" method="post">
-				<!-- <div class="field"> -->
 				<div class="textrow two">
 					<textarea id="recent-medications" rows="3" placeholder="What medications have you taken in the last 2 months? (e.g. vitamins, herbs, prescription, over-the-counter, etc.)"></textarea>
 					<textarea id="recent-drugs" rows="3" placeholder="Any non-medical drugs?"></textarea>
-				<!-- </div> -->
 				</div>
 			</form>
 		</section>
@@ -541,42 +488,34 @@
 			<h3>Please mark the area(s) that are bothering you</h3>
 			<form action="#" method="post">
 
-				<!-- Severities -->
-				<div class="checkbox block">
-					<h6>Select "mild", "moderate", or "strong" before clicking on body areas to change severity. Default is "moderate".<br>Use the slider to change mark size.</h6>
+				<h6>Select "mild", "moderate", or "strong" before clicking on body areas to change severity. Default is "moderate".<br>Use the slider to change mark size.</h6>
+				<div class="check-block">
 					<div class="brushes">
-						<div class="checkbox block partition">
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Mild</div>
-									<input type="radio" id="mild" name="severity" value="#f0e68c">
-									<span class="radiomark mild"></span>
-								</label>
+						<div class="check-block">
+							<div class="checkbox radio">
+								<div class="label">Mild</div>
+								<input class="inline" type="radio" id="mild" name="severity" value="#f0e68c">
+								<span class="decoy-checkbox mild"></span>
 							</div>
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Moderate</div>
-									<input type="radio" id="moderate" checked="true" name="severity" value="#f08080">
-									<span class="radiomark moderate"></span>
-								</label>
+							<div class="checkbox radio">
+								<div class="label">Moderate</div>
+								<input class="inline" type="radio" id="moderate" checked="true" name="severity" value="#f08080">
+								<span class="decoy-checkbox moderate"></span>
 							</div>
-							<div class="field">
-								<div class="checkbox check">
-									<div class="label">Strong</div>
-									<input type="radio" id="strong" name="severity" value="#eb1f48">
-									<span class="radiomark strong"></span>
-								</label>
+							<div class="checkbox radio">
+								<div class="label">Strong</div>
+								<input class="inline" type="radio" id="strong" name="severity" value="#eb1f48">
+								<span class="decoy-checkbox strong"></span>
 							</div>
 						</div>
 
-						<div id="block-paint-tools">
-							<input type="range" id="brush-size" min="10" max="25" value="10">
+						<div id="paint-tools">
+							<input class="inline" type="range" id="brush-size" min="10" max="25" value="10">
 							<button id="clear-canvas" type="button" onclick="drawboard.clearRect(0, 0, canvas.width, canvas.height)">Clear canvas</button>
 						</div>
 					</div>
 				</div>
 
-				<!-- Actual drawboard -->
 				<canvas width="550" height="450"></canvas>
 			</form>
 		</section>
@@ -585,150 +524,150 @@
 			<h3>General health in the last 3 months</h3>
 
 			<form action="#" method="post">
-				<div class="checkbox block">
+				<div class="check-block">
 					<!-- Row 1 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<!-- <div class="check-block partition"> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="poor-appetite">
-								Poor appetite
-								<input type="checkbox" name="poor-appetite">
+								<div class="label">Poor appetite</div>
+								<input class="inline" type="checkbox" name="poor-appetite">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="appetite-change">
-								Change in appetite
-								<input type="checkbox" name="appetite-change">
+								<div class="label">Change in appetite</div>
+								<input class="inline" type="checkbox" name="appetite-change">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="weight-gain">
-								Weight gain
-								<input type="checkbox" name="weight-gain">
+								<div class="label">Weight gain</div>
+								<input class="inline" type="checkbox" name="weight-gain">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="weight-loss">
-								Weight loss
-								<input type="checkbox" name="weight-loss">
+								<div class="label">Weight loss</div>
+								<input class="inline" type="checkbox" name="weight-loss">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-					</div>
+						<!-- </div> -->
+					<!-- </div> -->
 
 					<!-- Row 2 -->
-					<div class="checkbox block partition">
-							<div class="field">
-								<div class="checkbox check" id="night-sweat">
-									Sweating at night
-									<input type="checkbox" name="night-sweat">
-									<div class="decoy-checkbox"></div>
-								</label>
+					<!-- <div class="check-block partition"> -->
+						<!-- <div class="field"> -->
+							<div class="checkbox check" id="night-sweat">
+								<div class="label">Sweating at night</div>
+								<input class="inline" type="checkbox" name="night-sweat">
+								<div class="decoy-checkbox"></div>
 							</div>
-							<div class="field">
-								<div class="checkbox check" id="insomnia">
-									Insomnia
-									<input type="checkbox">
-									<div class="decoy-checkbox"></div>
-								</label>
+						<!-- </div> -->
+						<!-- <div class="field"> -->
+							<div class="checkbox check" id="insomnia">
+								<div class="label">Insomnia</div>
+								<input class="inline" type="checkbox">
+								<div class="decoy-checkbox"></div>
 							</div>
-							<div class="field">
-								<div class="checkbox check" id="poor-appetite">
-									Disturbed sleep
-									<input type="checkbox" name="poor-appetite">
-									<div class="decoy-checkbox"></div>
-								</label>
+						<!-- </div> -->
+						<!-- <div class="field"> -->
+							<div class="checkbox check" id="poor-appetite">
+								<div class="label">Disturbed sleep</div>
+								<input class="inline" type="checkbox" name="poor-appetite">
+								<div class="decoy-checkbox"></div>
 							</div>
-					</div>
+						<!-- </div> -->
+					<!-- </div> -->
 
 					<!-- Row 3 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<!-- <div class="check-block partition"> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="fever">
-								Fever
-								<input type="checkbox" name="fever">
+								<div class="label">Fever</div>
+								<input class="inline" type="checkbox" name="fever">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="chills">
-								Chills
-								<input type="checkbox" name="chills">
+								<div class="label">Chills</div>
+								<input class="inline" type="checkbox" name="chills">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="tremors">
-								Tremors
-								<input type="checkbox" name="tremors">
+								<div class="label">Tremors</div>
+								<input class="inline" type="checkbox" name="tremors">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-					</div>
+						<!-- </div> -->
+					<!-- </div> -->
 
 					<!-- Row 4 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<!-- <div class="check-block partition"> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="sweating">
-								Frequent sweating
-								<input type="checkbox" name="sweating">
+								<div class="label">Frequent sweating</div>
+								<input class="inline" type="checkbox" name="sweating">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="energy-drop">
-								Frequent energy drops
-								<input type="checkbox" name="energy-drop">
+								<div class="label">Frequent energy drops</div>
+								<input class="inline" type="checkbox" name="energy-drop">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="blood-bruise">
-								Frequent bleeding/bruising
-								<input type="checkbox" name="blood-bruise">
+								<div class="label">Frequent bleeding/bruising</div>
+								<input class="inline" type="checkbox" name="blood-bruise">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-					</div>
+						<!-- </div> -->
+					<!-- </div> -->
 
 					<!-- Row 5 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<!-- <div class="check-block partition"> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="cravings">
-								Cravings
-								<input type="checkbox">
+								<div class="label">Cravings</div>
+								<input class="inline" type="checkbox">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="thirst">
-								Strong thirst
-								<input type="checkbox" name="thirst">
+								<div class="label">Strong thirst</div>
+								<input class="inline" type="checkbox" name="thirst">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-					</div>
+						<!-- </div> -->
+					<!-- </div> -->
 
 					<!-- Row 6 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<!-- <div class="check-block partition"> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="poor-balance">
-								Poor balance
-								<input type="checkbox" name="poor-balance">
+								<div class="label">Poor balance</div>
+								<input class="inline" type="checkbox" name="poor-balance">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="localized-weakness">
-								Weak body part
-								<input type="checkbox" name="localized-weakness">
+								<div class="label">Weak body part</div>
+								<input class="inline" type="checkbox" name="localized-weakness">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
-				</div>
+				<!-- </div> -->
 
 				<!-- Row 7 -->
 				<textarea id="general-other" rows="5" placeholder="Anything we didn't list?"></textarea>
@@ -741,69 +680,69 @@
 				<div class="form-group">
 					<div class="field left">
 						<div class="column">
-							<div class="field">
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="rashes">
-									Rashes
-									<input type="checkbox" name="rashes">
+									<div class="label">Rashes</div>
+									<input class="inline" type="checkbox" name="rashes">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="recent-moles">
-									Recent moles
-									<input type="checkbox" name="recent-moles">
+									<div class="label">Recent moles</div>
+									<input class="inline" type="checkbox" name="recent-moles">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="ulcerations">
-									Ulcerations
-									<input type="checkbox" name="ulcerations">
+									<div class="label">Ulcerations</div>
+									<input class="inline" type="checkbox" name="ulcerations">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="pimples">
-									Pimples
-									<input type="checkbox" name="pimples">
+									<div class="label">Pimples</div>
+									<input class="inline" type="checkbox" name="pimples">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="texture-change">
-									Changes in hair/skin texture
-									<input type="checkbox" name="texture-change">
+									<div class="label">Changes in hair/skin texture</div>
+									<input class="inline" type="checkbox" name="texture-change">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="hives">
-									Hives
-									<input type="checkbox" name="hives">
+									<div class="label">Hives</div>
+									<input class="inline" type="checkbox" name="hives">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="dandruff">
-									Dandruff
-									<input type="checkbox" name="dandruff">
+									<div class="label">Dandruff</div>
+									<input class="inline" type="checkbox" name="dandruff">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="itching">
-									Itching
-									<input type="checkbox" name="itching">
+									<div class="label">Itching</div>
+									<input class="inline" type="checkbox" name="itching">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="hair-loss">
-									Hair loss
-									<input type="checkbox" name="hair-loss">
+									<div class="label">Hair loss</div>
+									<input class="inline" type="checkbox" name="hair-loss">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
+								</div>
+							<!-- </div> -->
 						</div>
 					</div>
 
@@ -814,186 +753,185 @@
 			</form>
 		</section>
 
-
 		<section id="head-neck" class="form-section">
 			<h3>Head, eyes, ear, nose, throat</h3>
 			<form action="#" method="post" class="island">
-				<div class="checkbox block">
-					<h3>I've been having frequent...</h3>
+				<h3>I've been having frequent...</h3>
+				<div class="check-block">
 
 					<!-- Row 1 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<div class="check-block partition">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="dizziness">
-								Dizziness
-								<input type="checkbox" name="dizziness">
+								<div class="label">Dizziness</div>
+								<input class="inline" type="checkbox" name="dizziness">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="color-blindness">
-								Color blindness
-								<input type="checkbox" name="color-blindness">
+								<div class="label">Color blindness</div>
+								<input class="inline" type="checkbox" name="color-blindness">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="sore-throat">
-								Sore throats
-								<input type="checkbox" name="sore-throat">
+								<div class="label">Sore throats</div>
+								<input class="inline" type="checkbox" name="sore-throat">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 
 					<!-- Row 2 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<div class="check-block partition">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="concussion">
-								Concussions
-								<input type="checkbox" name="concussion">
+								<div class="label">Concussions</div>
+								<input class="inline" type="checkbox" name="concussion">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="cataracts">
-								Cataracts
-								<input type="checkbox" name="cataracts">
+								<div class="label">Cataracts</div>
+								<input class="inline" type="checkbox" name="cataracts">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="nosebleeds">
-								Nosebleeds
-								<input type="checkbox" name="nosebleeds">
+								<div class="label">Nosebleeds</div>
+								<input class="inline" type="checkbox" name="nosebleeds">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 
 					<!-- Row 3 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<div class="check-block partition">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="migraines-headaches">
-								Headaches/migraines
-								<input type="checkbox" name="migraines-headaches">
+								<div class="label">Headaches/migraines</div>
+								<input class="inline" type="checkbox" name="migraines-headaches">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="blurry-vision">
-								Blurry vision
-								<input type="checkbox" name="blurry-vision">
+								<div class="label">Blurry vision</div>
+								<input class="inline" type="checkbox" name="blurry-vision">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="grinding-teeth">
-								Grinding teeth
-								<input type="checkbox" name="grinding-teeth">
+								<div class="label">Grinding teeth</div>
+								<input class="inline" type="checkbox" name="grinding-teeth">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 
 					<!-- Row 4 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<div class="check-block partition">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="earaches">
 								Earaches
-								<input type="checkbox" name="earaches">
+								<input class="inline" type="checkbox" name="earaches">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="lip-tongue-sores">
-								Lip/tongue sores
-								<input type="checkbox" name="lip-tongue-sores">
+								<div class="label">Lip/tongue sores</div>
+								<input class="inline" type="checkbox" name="lip-tongue-sores">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="eye-spots">
-								Spots in front of eyes
-								<input type="checkbox" name="eye-spots">
+								<div class="label">Spots in front of eyes</div>
+								<input class="inline" type="checkbox" name="eye-spots">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 
 					<!-- Row 5 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<div class="check-block partition">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="ringing">
-								Ringing in ears
-								<input type="checkbox" name="ringing">
+								<div class="label">Ringing in ears</div>
+								<input class="inline" type="checkbox" name="ringing">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="facial-pain">
-								Facial pain
-								<input type="checkbox" name="facial-pain">
+								<div class="label">Facial pain</div>
+								<input class="inline" type="checkbox" name="facial-pain">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="eye-pain">
-								Eye pain
-								<input type="checkbox" name="eye-pain">
+								<div class="label">Eye pain</div>
+								<input class="inline" type="checkbox" name="eye-pain">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 
 					<!-- Row 6 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<div class="check-block partition">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="poor-hearing">
-								Poor hearing
-								<input type="checkbox" name="poor-hearing">
+								<div class="label">Poor hearing</div>
+								<input class="inline" type="checkbox" name="poor-hearing">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="tooth-problems">
-								Tooth problems
-								<input type="checkbox" name="tooth-problems">
+								<div class="label">Tooth problems</div>
+								<input class="inline" type="checkbox" name="tooth-problems">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="eye-strains">
-								Eye strains
-								<input type="checkbox" name="eye-strains">
+								<div class="label">Eye strains</div>
+								<input class="inline" type="checkbox" name="eye-strains">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 
 					<!-- Row 7 -->
-					<div class="checkbox block partition">
-						<div class="field">
+					<div class="check-block partition">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="night-blindness">
-								Night blindness
-								<input type="checkbox" name="night-blindness">
+								<div class="label">Night blindness</div>
+								<input class="inline" type="checkbox" name="night-blindness">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="hair-loss">
-								Sinus problems
-								<input type="checkbox" name="hair-loss">
+								<div class="label">Sinus problems</div>
+								<input class="inline" type="checkbox" name="hair-loss">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="jaw-clicks">
-								Jaw clicks
-								<input type="checkbox" name="jaw-clicks">
+								<div class="label">Jaw clicks</div>
+								<input class="inline" type="checkbox" name="jaw-clicks">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 				</div>
 
@@ -1009,62 +947,62 @@
 					<div class="field left">
 						<div class="column">
 							<h3>I have frequent...</h3>
-							<div class="field">
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="hand-foot-swelling">
-									Hand/foot swelling
-									<input type="checkbox" name="hand-foot-swelling">
+									<div class="label">Hand/foot swelling</div>
+									<input class="inline" type="checkbox" name="hand-foot-swelling">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="fainting">
-									Loss of consciousness
-									<input type="checkbox" name="fainting">
+									<div class="label">Loss of consciousness</div>
+									<input class="inline" type="checkbox" name="fainting">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="blood-clots">
-									Blood clots
-									<input type="checkbox" name="blood-clots">
+									<div class="label">Blood clots</div>
+									<input class="inline" type="checkbox" name="blood-clots">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="chest-pain">
-									Chest pains
-									<input type="checkbox" name="chest-pain">
+									<div class="label">Chest pains</div>
+									<input class="inline" type="checkbox" name="chest-pain">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="cold-hands-feet">
-									Cold hands/feet
-									<input type="checkbox" name="cold-hands-feet">
+									<div class="label">Cold hands/feet</div>
+									<input class="inline" type="checkbox" name="cold-hands-feet">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="trouble-breathing">
-									Trouble breathing
-									<input type="checkbox" name="trouble-breathing">
+									<div class="label">Trouble breathing</div>
+									<input class="inline" type="checkbox" name="trouble-breathing">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="irregular-heatbeat">
-									Irregular heartbeat
-									<input type="checkbox" name="irregular-heatbeat">
+									<div class="label">Irregular heartbeat</div>
+									<input class="inline" type="checkbox" name="irregular-heatbeat">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check" id="phlebitis">
-									Phlebitis
-									<input type="checkbox" name="phlebitis">
+									<div class="label">Phlebitis</div>
+									<input class="inline" type="checkbox" name="phlebitis">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
+								</div>
+							<!-- </div> -->
 						</div>
 					</div>
 
@@ -1083,62 +1021,62 @@
 					<div class="field left">
 						<div class="column">
 							<h3>I have...</h3>
-							<div class="field">
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="label">Coughs</div>
-									<input type="checkbox" id="cough">
+									<input class="inline" type="checkbox" id="cough">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="label">Bronchitis</div>
-									<input type="checkbox" id="bronchitis">
+									<input class="inline" type="checkbox" id="bronchitis">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="lab">Difficulty breathing when flat</div>
-									<input type="checkbox" id="breathing-lying-down">
+									<input class="inline" type="checkbox" id="breathing-lying-down">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="label">Blood when coughing</div>
-									<input type="checkbox" id="coughing-blood">
+									<input class="inline" type="checkbox" id="coughing-blood">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="label">Painful breathing</div>
-									<input type="checkbox" id="painful-breathing">
+									<input class="inline" type="checkbox" id="painful-breathing">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="label">Asthma</div>
-									<input type="checkbox" id="asthma">
+									<input class="inline" type="checkbox" id="asthma">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="label">Pneummonia</div>
-									<input type="checkbox" id="pneumonia">
+									<input class="inline" type="checkbox" id="pneumonia">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
-							<div class="field">
+								</div>
+							<!-- </div> -->
+							<!-- <div class="field"> -->
 								<div class="checkbox check">
 									<div class="label">Excessive mucus</div>
-									<input type="checkbox" id="excessive-phlegm">
+									<input class="inline" type="checkbox" id="excessive-phlegm">
 									<div class="decoy-checkbox"></div>
-								</label>
-							</div>
+								</div>
+							<!-- </div> -->
 						</div>
 					</div>
 
@@ -1154,108 +1092,108 @@
 
 			<form action="#" method="post" class="island">
 				<div class="form-group">
-					<div class="checkbox block">
+					<div class="check-block">
 						<h3>I have...</h3>
 
-						<div class="field">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="nausea">
 								<div class="label">Nausea</div>
-								<input type="checkbox">
+								<input class="inline" type="checkbox">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="belching">
-								Belching</div>
-								<input type="checkbox">
+								<div class="label">Belching</div>
+								<input class="inline" type="checkbox">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="rectal-pain">
-								Rectal pain</div>
-								<input type="checkbox" id="rectal-pain">
+								<div class="label">Rectal pain</div>
+								<input class="inline" type="checkbox" id="rectal-pain">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
-								Vomitting</div>
-								<input type="checkbox" id="vomitting">
+								<div class="label">Vomitting</div>
+								<input class="inline" type="checkbox" id="vomitting">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
-								Black stools</div>
-								<input type="checkbox" id="black-stools">
+								<div class="label">Black stools</div>
+								<input class="inline" type="checkbox" id="black-stools">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Hemorrhoids</div>
-								<input type="checkbox" id="hemorrhoids">
+								<input class="inline" type="checkbox" id="hemorrhoids">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Diarrhea</div>
-								<input type="checkbox" id="diarrhea">
+								<input class="inline" type="checkbox" id="diarrhea">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 
-						<div class="field">
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Blood stools</div>
-								<input type="checkbox" id="blood-stools">
+								<input class="inline" type="checkbox" id="blood-stools">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Abdominal discomfort</div>
-								<input type="checkbox" id="abdominal-discomfort">
+								<input class="inline" type="checkbox" id="abdominal-discomfort">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Constipation
-								<input type="checkbox" id="constipation">
+								<input class="inline" type="checkbox" id="constipation">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Indigestion</div>
-								<input type="checkbox" id="indigestion">
+								<input class="inline" type="checkbox" id="indigestion">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
-								Need of laxatives</div>
-								<input type="checkbox" id="laxative-use">
+								<div class="label">Need of laxatives</div>
+								<input class="inline" type="checkbox" id="laxative-use">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
-								Gas</div>
-								<input type="checkbox" id="gas">
+								<div class="label">Gas</div>
+								<input class="inline" type="checkbox" id="gas">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
-								Bad breath</div>
-								<input type="checkbox" id="bad-breath">
+								<div class="label">Bad breath</div>
+								<input class="inline" type="checkbox" id="bad-breath">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 				</div>
 
@@ -1267,75 +1205,75 @@
 			<h3>Genitourinary</h3>
 			<form action="#" method="post" class="island">
 
-				<div class="checkbox block">
+				<div class="check-block">
 					<h3>I have...</h3>
 					<div class="row">
-						<div class="field">
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Pain on urination</div>
-								<input type="checkbox" id="urination-pain">
+								<input class="inline" type="checkbox" id="urination-pain">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Urgency to urinate</div>
-								<input type="checkbox" id="urination-urgency">
+								<input class="inline" type="checkbox" id="urination-urgency">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Frequent urination</div>
-								<input type="checkbox" id="frequent-urination">
+								<input class="inline" type="checkbox" id="frequent-urination">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Involuntary urination</div>
-								<input type="checkbox" id="cant-hold-urine">
+								<input class="inline" type="checkbox" id="cant-hold-urine">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check">
 								<div class="label">Blood in urine</div>
-								<input type="checkbox" id="urine-blood">
+								<input class="inline" type="checkbox" id="urine-blood">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 
 					<div class="row">
-						<div class="field">
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="kidney-stones">
 								<div class="label">Kidney stones</div>
-								<input type="checkbox" name="kidney-stones">
+								<input class="inline" type="checkbox" name="kidney-stones">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="impotency">
 								<div class="label">Impotency</div>
-								<input type="checkbox" name="impotency">
+								<input class="inline" type="checkbox" name="impotency">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="genital-sores">
 								<div class="label">Genital sores</div>
-								<input type="checkbox" name="genital-sores">
+								<input class="inline" type="checkbox" name="genital-sores">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
-						<div class="field">
+						<!-- </div> -->
+						<!-- <div class="field"> -->
 							<div class="checkbox check" id="urine-at-night">
 								<div class="label">Bathroom at night</div>
-								<input type="checkbox" name="cant-hold-urine">
+								<input class="inline" type="checkbox" name="cant-hold-urine">
 								<div class="decoy-checkbox"></div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 				</div>
 
@@ -1362,9 +1300,17 @@
 			<button id="submit-button" type="submit">Submit Form</button>
 		</section>
 
+
+		<!-- ReactJS Setup -->
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin="anonymous"></script>
+
 		<!-- More Internal JavaScript -->
 		<script src="assets/js/intake-form.js"></script>
 		<script src="assets/js/selector.js"></script>
+		<!-- <script type="text/babel" src="assets/jsx/drawboard.jsx" async></script> -->
 		<script src="assets/js/drawboard.js" async></script>
+		<!-- <script type="text/babel" src="assets/jsx/buttons.jsx"></script> -->
 	</body>
 </html>

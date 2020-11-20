@@ -3,6 +3,11 @@
 
 /* ~~~~~~~~~~~~~~~~~~~ Brushes box ~~~~~~~~~~~~~~~~~~~ */
 
+#drawboard {
+	display: flex;
+	flex-direction: column;
+}
+
 .brushes {
 	width: 55%;
 	background-color: #3cb371;
@@ -40,11 +45,12 @@ canvas {
 }
 
 
-#block-paint-tools {
+#paint-tools {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 60px;
+	width: 100%;
 }
 
 #clear-canvas {
