@@ -89,6 +89,9 @@ themeSwitch.addEventListener(
 					--acu-dark-green: ${darkMode.dark_green} !important;
 					--acu-dark-blue: ${darkMode.dark_blue} !important;
 					--acu-dark-white: ${darkMode.dark_white} !important;
+
+					--lighter-than-back: ${darkMode.lighter_than_back} !important;
+					--darker-than-back: ${darkMode.darker_than_back} !important;
 				`;
 		}
 
