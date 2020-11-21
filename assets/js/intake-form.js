@@ -19,7 +19,7 @@
 *                      *
 ************************/
 
-$('#dateofbirth').on("change", function() {
+$('#date-of-birth').on("change", function() {
 	birthdate = this.value;
 	age_field = document.getElementById("age");
 
@@ -109,20 +109,20 @@ function liveNumberFormat(element, format, delimiter) {
 *                        *
 **************************/
 
-// dob_fields = [document.querySelector(`input[name="dateofbirth"]`)];
+dob_fields = [document.querySelector(`input[name="dateofbirth"]`)];
 
-// if (dob_fields[0] != null) {
-// 	dob_fields.forEach(function(field) {
-// 		field.addEventListener("input", function(event) {
-// 			if (event.inputType == "deleteContentBackward" && field.value.endsWith(" / ")) {
-// 				field.value = field.value.slice(0, -3);
-// 				return;
-// 			}
+if (dob_fields[0] != null) {
+	dob_fields.forEach(function(field) {
+		field.addEventListener("input", function(event) {
+			if (event.inputType == "deleteContentBackward" && field.value.endsWith(" / ")) {
+				field.value = field.value.slice(0, -3);
+				return;
+			}
 
-// 			liveNumberFormat(this, "12 / 31 / 2020", " / ");
-// 		});
-// 	});
-// }
+			liveNumberFormat(this, "12 / 31 / 2020", " / ");
+		});
+	});
+}
 
 /**************************
 *                         *
@@ -161,7 +161,7 @@ if (ssn_field) {
 
 // 00 / 00 / 0000
 
-dob = document.querySelector("#dateofbirth");
+dob = document.querySelector("#date-of-birth");
 
 if (dob) {
 	dob.addEventListener("input", function(event) {

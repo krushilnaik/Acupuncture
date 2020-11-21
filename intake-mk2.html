@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+		<title>AHC - Intake II</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="assets/js/datedropper.pro.min.js"></script>
+
+
+		<link rel="stylesheet" href="assets/css/colors.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/intake-mk2.css">
+		<link rel="stylesheet" href="assets/css/checkbox.css">
+		<link rel="stylesheet" href="assets/css/animations.css">
+		<link rel="stylesheet" href="assets/css/preloader.css">
+	</head>
+	<body>
+		<!-- Dark/Light Mode -->
+		<button id="reload-css" class="light">
+			<img src="assets/images/icons/dark-mode.png">
+		</button>
+
+		<script src="assets/js/theme-handler.js"></script>
+
+		<!-- PreLoader -->
+		<div class='preloader'>
+			<div class="preloader-inner"></div>
+		</div>
+
+		<script>
+			window.onload = function() {$('.preloader').delay(500).fadeOut('slow');}
+		</script>
+
+		<!-- Top stuff -->
+		<section class="heading center">
+			<!-- Logo & slogan -->
+			<a class="logo company-name" href="index.html">Acupuncture Herb Center</a>
+			<a class="logo graphic center" href="index.html"></a>
+			<div id="slogan" class="center">Healing for the mind, body, and spirit.</div>
+
+			<hr>
+
+			<!-- Site navigation -->
+			<div id="navigation">
+				<div id="insite-navigation" class="nav-group">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="services-offered.html">Services Offered</a>
+					<a class="nav-link" href="shop.html">Diseases Treated</a>
+					<a class="nav-link" href="shop.html">Infertility</a>
+					<a class="nav-link" href="intake-mk2.html">New Patients</a>
+					<a class="nav-link" href="faq.html">FAQ</a>
+				</div>
+			</div>
+
+			<div id="todays-hours">
+				<svg width="calc(1em + 5px)" height="calc(1em + 5px)" viewBox="0 0 16 16" fill="currentColor" class="clock-icon" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+					<path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+				</svg>
+				<span id="hours"></span>
+				<script>
+					const todaysDate = new Date();
+					const openHours = [
+						"Sunday: Closed",
+						"Monday: 3pm–6pm",
+						"Tuesday: 9am–7pm",
+						"Wednesday: 9am–7pm",
+						"Thursday: 12pm–6pm",
+						"Friday: 9am–7pm",
+						"Saturday: 9am–2pm"
+					];
+
+					let todaysHours = document.getElementById("hours");
+
+					todaysHours.innerHTML = openHours[todaysDate.getDay()];
+				</script>
+			</div>
+		</section>
+
+		<div style="height: 80px;"></div>
+
+		<a href="assets/misc/intakeform.pdf" id="pdf-form">View as PDF</a>
+
+		<section id="intake-form">
+			<h3 class="title">Health History Questionnaire</h3>
+
+			<div class="form row three">
+				<input class="inline" type="text" name="last-name" id="last-name" placeholder="Last Name">
+				<input class="inline" type="text" name="first-name" id="first-name" placeholder="First Name">
+				<input class="inline" type="text" name="appointment-date" id="appointment-date" placeholder="Appointment Date">
+				<script>
+					$('#appointment-date').dateDropper({
+						theme: 'acupuncture',
+						large: true,
+						largeDefault: true,
+						largeOnly: true,
+						lock: 'from',
+						minYear: (new Date()).getFullYear(),
+						maxYear: (new Date()).getFullYear() + 1,
+						jump: 5,
+						startFromMonday: false
+					});
+				</script>
+			</div>
+
+			<div class="form row four">
+				<input type="text" name="street" id="street" placeholder="Home Address">
+				<input type="text" name="city" id="city" placeholder="City">
+				<input type="text" name="state" id="state" placeholder="State">
+				<input type="text" name="zip-code" id="zip-code" placeholder="ZIP Code">
+			</div>
+
+			<div class="form row three">
+				<input type="tel" name="home-phone" id="home-phone" placeholder="Home Phone">
+				<input type="tel" name="work-phone" id="work-phone" placeholder="Work Phone">
+				<input type="tel" name="cell-phone" id="cell-phone" placeholder="Cell-Phone">
+			</div>
+
+			<div class="form row two">
+				<input type="text" name="date-of-birth" id="date-of-birth" placeholder="Date of Birth (DOB)">
+				<input type="text" name="ssn" id="ssn" placeholder="Social Security Number">
+			</div>
+
+			<div class="form row three">
+				<input type="text" name="age" id="age" placeholder="Age">
+				<input type="text" name="height" id="height" placeholder="Height (please specify units)">
+				<input type="text" name="weight" id="weight" placeholder="Weight (please specify units)">
+			</div>
+
+			<div class="form row two">
+				<input type="text" name="occupation" id="occupation" placeholder="Occupation">
+				<input type="text" name="marital-status" id="marital-status" placeholder="Marital Status">
+			</div>
+
+			<div class="form row two">
+				<input type="email" name="email" id="email" placeholder="Email">
+				<input type="text" name="referred-by" id="referred-by" placeholder="Referred by (patient name, ad location, etc.)">
+			</div>
+
+			<div class="form row two">
+				<input type="text" name="emergency-contact" id="emergency-contact" placeholder="Emergency Contact Name">
+				<input type="tel" name="emergency-contact-phone" id="emergency-contact-phone" placeholder="Emergency Contact Phone Number">
+			</div>
+
+			<div class="form row four">
+				<input style="grid-column: 2 / 4;" type="text" name="family-physician" id="family-physician" placeholder="Family Physician">
+			</div>
+
+			<div class="form row two">
+				<input type="text" name="policy-holder" id="policy-holder" placeholder="Insurance Policy Holder Name">
+				<input type="text" name="ph-date-of-birth" id="ph-date-of-birth" placeholder="Policy Holder DOB">
+			</div>
+
+			<div class="check-column checkbox check">
+				<div class="label">I've tried acupuncture before</div>
+				<input type="checkbox" id="have-tried">
+				<div class="decoy-checkbox"></div>
+			</div>
+
+			<hr>
+
+			<h3 class="title">Tell us what's going on</h3>
+
+			<div class="form row three">
+				<textarea id="main-problems" rows="6" placeholder="For example:&#10;    How severe is the problem?&#10;    How long has this been going on?&#10;    Have you been diagnosed?&#10;    What have you tried so far?"></textarea>
+			</div>
+		</section>
+
+		<script src="assets/js/intake-form.js"></script>
+
+	</body>
+
+	<footer class="center">
+		<span class="copyright">©2020 by Acupuncture Herb Center</span>
+	</footer>
+</html>
