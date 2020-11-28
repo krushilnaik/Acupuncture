@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+
+.title {
+	margin: 0%;
+	margin-bottom: 1%;
+	color: unset;
+	font-family: 'Texturina';
+	font-size: 30px;
+}
+	.title.small {
+		font-size: 25px;
+	}
+
+#intake-form {
+	width: 75%;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--acu-blue);
+	border-radius: 15px 0 15px 0;
+	/* border: solid 4px var(--acu-red); */
+	/* box-shadow: -6px 10px 0px var(--acu-red); */
+	box-sizing: border-box;
+	padding: 15px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.form.row {
+	display: grid;
+	column-gap: 1%;
+	padding-top: .25%;
+	padding-bottom: .25%;
+	width: 100%;
+}
+	.form.row.two {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.form.row.two.unequal {
+		grid-template-columns: 1fr 2fr;
+	}
+	.form.row.three {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.form.row.four {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+.form.column {
+	display: grid;
+	column-gap: 1%;
+	row-gap: 1%;
+	padding-top: .25%;
+	padding-bottom: .25%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+	padding: .6% 1.5%;
+	border-radius: 10px;
+	outline: none;
+	border: solid 2px var(--lighter-than-back);
+	font-size: 20px;
+	line-height: 1.5em;
+	background-color: var(--darker-than-back);
+	width: 100%;
+}
+
+textarea {
+	background-color: var(--darker-than-back);
+	border: solid 2px var(--lighter-than-back);
+	border-radius: 10px;
+	outline: none;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	resize: none;
+	width: 100%;
+	padding: .5% .7%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color: var(--lighter-than-back);
+}
+
+::-webkit-input-placeholder {color: var(--acu-white);}
+:-ms-input-placeholder {color: var(--acu-white);}
+::placeholder {color: var(--acu-white);}
+
+.datedropper.acupuncture {
+	--dd-color1: var(--acu-green);
+	--dd-color2: var(--acu-wallpaper);
+	--dd-color3: var(--acu-black);
+	--dd-color4: var(--acu-white);
+
+	--dd-radius: 0 25px 0 25px;
+	--dd-shadow: -8px 6px 0px var(--acu-red);
+
+	border: solid 4px var(--acu-red);
+}
+	.datedropper.acupuncture:before {
+		border: solid 4px var(--acu-red);
+	}
+
+
+
+/* @media (max-width: 1000px) {
+	* {
+		font-size: 15px !important;
+	}
+} */

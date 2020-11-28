@@ -1,0 +1,43 @@
+{
+	"Products": [
+		{
+			"Name": "Helena Lee",
+			"Description": [
+				"Helena Lee, CA, MTOM, RN is New Jersey and New York State Licensed and National Board Certified in Acupuncture (NCCAOM) and Herbology.",
+				"She has a Master of Science in Acupuncture and Chinese Herbology from the Pacific College of Oriental Medicine and holds a Master of Science in Nursing from Yosei University in Korea and the University of Pennsylvania.",
+				"She has worked over ten years in a hospital setting. She was a faculty member at the Eastern Acupuncture School in New Jersey.",
+				"She is the Founder of the Acupuncture Herb Center, which has a location in Wayne and in Morristown.",
+				"Helena Lee is a highly trained and experienced practitioner of Traditional Oriental Medicine.",
+				"She incorporates acupuncture and herbal medicine and lifestyles counseling into her treatment plans to achieve the most effective results possible for her patients.",
+				"She concentrates on balancing the body’s energy to enter its own healing system, helping fight diseases as well as to rejuvenate from damage and injuries.",
+				"Her practice focuses on pain management, stress management and women’s health including fertility."
+			],
+			"Images": ["./assets/images/helena-lee.jpg"]
+		},
+		{
+			"Name": "Seah Kim",
+			"Description": [
+				"Seah Kim, MSTOM, Dipl OM, L.Ac, RD is a licensed acupuncturist and herbalist in New Jersey and New York.",
+				"She has a Diplomat of Oriental Medicine by National Certification Commission of Acupuncture and Oriental Medicine (NCCAOM).",
+				"She initially started out her career as a registered dietitian (RD) working at a long term care and sub-acute facility.",
+				"Very quickly she realized current conventional medicine had its limitation and felt the need to learn about other systems of medicine that viewed patient care with a holistic approach.",
+				"She then completed her Masters of Science in Traditional Oriental Medicine (MSTOM) from Pacific College of Oriental Medicine in New York.",
+				"With love of learning, she is currently pursuing Doctorate of Acupuncture and Chinese Medicine (DACM) from Pacific College of Oriental Medicine."
+			],
+			"Images": ["./assets/images/seah-kim.jpg"]
+		},
+		{
+			"Name": "Yong Yi",
+			"Description": [
+				"Yong has a Diplomate of Acupuncture by National Certification Commission of Acupuncture and Oriental Medicine (NCCAOM), and licensed by the Commonwealth of Pennsylvania and the state of New Jersey.",
+				"He graduated from The New York College of Traditional Chinese Medicine and attended postgraduate education program at Guang An Men Chinese Medicine Hospital, Beijing, China, where he studied weight management, pain management, acute and chronic post-paralysis, and facial rejuvenation.",
+				"His acupuncture practice is based on traditional Chinese, Korean and Japanese Acupuncture, Acupressure, Moxibustion, Cupping, Guasha, Auricular Therapy, Electroacupuncture and Herbal Therapy.",
+				"He incorporates Five Phases & Six Energetics theories of Chinese classics such as Nei-Jing and I-Ching.",
+				"He utilizes Electronic Meridian Imaging (EMI) system to evaluate the Meridian Energetics of his patient.",
+				"He is a member of American Association of Acupuncture & Oriental Medicine (AAAOM), Association for Professional Acupuncture in Pennsylvania (APA), and American Acupuncture Council (AAC).",
+				"He continues his education and training in programs around the United States to further his knowledge, thus bring forth \"Ancient Wisdom, Timeless Compassions!\" for his patients."
+			],
+			"Images": ["./assets/images/yong-yi.png"]
+		}
+	]
+}

@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+/* ~~~~~~~~~~~~~~~~~~~ Page Layout ~~~~~~~~~~~~~~~~~~~ */
+
+* {
+	color: var(--acu-white);
+}
+
+.form-section {
+	background-color: var(--acu-blue);
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 3%;
+	border-radius: 0 25px 0 25px;
+	border: solid 4px var(--acu-red);
+	padding: 1%;
+	box-shadow: -8px 6px 0px var(--acu-red);
+}
+
+
+h3 {
+	/* text-align: center; */
+	font-family: 'Sriracha', cursive;
+	color: var(--acu-white);
+}
+
+h6[class="top"] {
+	padding-top: 0;
+	margin-top: -10px;
+}
+
+a {
+	color: var(--acu-white);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~ Form Layout ~~~~~~~~~~~~~~~~~~~ */
+
+form {
+	margin: 1%;
+}
+	form h6 {
+		padding-top: 20px;
+	}
+
+.field {
+	display: inline-block;
+	/* margin: .5% 4%; */
+	/* background-color: red; */
+	/* width: max-content; */
+	padding: .5%;
+}
+	.field:focus {
+		outline: none;
+	}
+
+	.field label {
+		width: max-content;
+	}
+
+div[id ^= "block"] {
+	/* text-align: center; */
+	/* vertical-align: middle; */
+	background-color: var(--lighter-than-back);
+	/* width: 95%; */
+	/* align-self: center; */
+	/* margin-left: 5%; */
+	/* margin-bottom: 1%; */
+	border-radius: 10px;
+	margin: 1%;
+	padding: .5%;
+}
+	div[id ^= "block"] .inline {
+		display: inline;
+	}
+
+form .textcolumn {
+	display: block;
+	padding: 1%;
+	width: 100%;
+}
+	form .textcolumn textarea {
+		padding: inherit;
+	}
+
+form .textrow {
+	display: inline;
+}
+	form .textrow.two textarea {
+		width: 49%;
+	}
+	form .textrow.three textarea {
+		width: 33%;
+	}
+
+form .form-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	position: relative;
+}
+	form .form-group .field.left {
+		width: fit-content;
+	}
+
+	form .form-group .field.right {
+		width: 56%;
+	}
+
+#submit-form {
+	width: 11%;
+}
+
+.island div {
+	margin: auto;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~ Date Picker ~~~~~~~~~~~~~~~~~~~ */
+
+/* .bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+	border: solid 6px transparent;
+}
+
+.bootstrap-datetimepicker-widget * {
+	margin: 2px; 
+}
+
+.input-group, table, 
+.bootstrap-datetimepicker-widget table th.picker-switch,
+.bootstrap-datetimepicker-widget table th{
+	width: 350px;
+	border-radius: 10px;
+	background: #6daf92;
+	color: var(--acu-white);
+}
+
+.form-control.datetimepicker-input {
+	background-color: var(--lighter-than-back);
+	transition: .5s;
+	border-radius: 10px;
+	border: solid 2px #8dcca9;
+	color: var(--acu-white);
+}
+	.form-control.datetimepicker-input::placeholder {
+		color: var(--acu-white);
+	}
+	.form-control.datetimepicker-input:hover,
+	.form-control.datetimepicker-input:focus {
+		outline: none;
+		background-color: #6d9f92;
+	}
+
+.input-group-addon{
+	background: #6daf92;
+	height: 45px;
+	border-radius: 10px;
+	border: solid 2px #8dcca9;
+	color: antiquewhite;
+}
+
+.dropdown-menu {
+	background-color: #6cc091;
+} */
+
+/* ~~~~~~~~~~~~~~~~~~~ Input Fields ~~~~~~~~~~~~~~~~~~~ */
+
+input {
+	display: inline-block;
+	height: 45px;
+
+	color: var(--acu-white);
+	background: #6cc091;
+
+	transition: .5s;
+
+	border: solid 2px #8dcca9;
+	border-radius: 10px;
+	padding: 5px 13px;
+}
+	input:focus, input:hover{
+		outline: none;
+		background: #6d9f92;
+	}
+
+#age {width: 10em;}
+#ssn {width: 13em;}
+#referral {width: 20em}
+#zip-code {width: 10em;}
+#policy-holder {width: 23em;}
+#address, #patient-email {width: 20em;}
+#family-physician, #occupation {width: 17em;}
+#first-name, #last-name, #emergency-name {width: 15em;}
+
+#height, #weight {
+	width: 8em;
+	border-radius: 10px 0 0 10px;
+}
+
+#marital-status {
+	left: 0;
+	width: max-content;
+	border-radius: 10px;
+}
+
+#sex {
+	left: 0;
+	width: 6em;
+	border-radius: 10px;
+}
+
+#appointment,
+#dateofbirth {
+	width: 15em;
+}
+
+label {
+	width: max-content;
+}
+
+textarea{
+	display: inline-block;
+	margin-top: 1%;
+	background: #6cc091;
+	border-radius: 10px;
+	border: solid 2px #8dcca9;
+	color: var(--acu-white);
+	padding: .3% .5%;
+	width: 100%;
+	transition: .5s;
+}
+	textarea:hover, textarea:active, textarea:focus {
+		outline: none;
+		background-color: #6d9f92;
+	}
+
+
+button {
+	color: #6cc091;
+	background-color: var(--acu-white);
+	/* box-shadow: inset 0 0 0 3px #2e8b57; */
+	width: 14em;
+
+	transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	-ms-transition: .5s;
+
+	border: solid 3px #2e8b57;
+	border-radius: 30px;
+
+	cursor: pointer;
+	font-size: 75%;
+	font-weight: 500;
+
+	line-height: 40px;
+
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+	button:hover {
+		color: var(--acu-white);
+		background-color: #6cc091;
+		border: solid 3px var(--acu-white);
+		/* box-shadow: inset 0 0 0 3px var(--acu-white); */
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+div.datedropper.acupuncture {
+	--dd-color1: var(--acu-green);
+	--dd-color2: var(--acu-wallpaper);
+	--dd-color3: var(--acu-black);
+	--dd-color4: var(--acu-white);
+
+	--dd-radius: 0 25px 0 25px;
+	--dd-shadow: -8px 6px 0px var(--acu-red);
+
+	border: solid 4px var(--acu-red);
+}
+	div.datedropper.acupuncture:before {
+		border: solid 4px var(--acu-red);
+	}
+
+::-webkit-input-placeholder {color: var(--acu-white);}
+:-ms-input-placeholder {color: var(--acu-white);}
+::placeholder {color: var(--acu-white);}

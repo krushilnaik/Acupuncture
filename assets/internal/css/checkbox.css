@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.check-column {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+	.check-column > h3 {
+		text-align: center;
+		width: 100%;
+	}
+
+.check-block {
+	display: flex;
+	flex-direction: row wrap;
+	align-items: baseline;
+	justify-content: left;
+	width: max-content;
+}
+
+.checkbox {
+	position: relative;
+	margin: 5px;
+	top: 50%;
+	color: var(--acu-white);
+	font-size: 20px;
+	/* padding: 1em; */
+	padding-left: 0%;
+	font-family: monospace;
+}
+	.checkbox input {
+		position: absolute;
+		padding: 0%;
+		margin: 0%;
+		top: 50%;
+		left: 0%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		z-index: 9999999999;
+		opacity: 0%;
+		cursor: pointer;
+		font-size: inherit;
+		width: 100%;
+		height: 1em;
+	}
+	.checkbox .label {
+		font-size: inherit;
+		padding-left: 1em;
+		text-align: left;
+		width: max-content;
+		margin-left: 5px;
+	}
+	.checkbox .decoy-checkbox {
+		position: absolute;
+		padding: 0%;
+		margin: 0%;
+		top: 50%;
+		transition: all .25s;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		width: 1.1em;
+		height: 1.1em;
+		border-radius: 6px;
+		box-sizing: border-box;
+		border: solid 3px slateblue;
+		background-color: transparent;
+	}
+	.checkbox.check .decoy-checkbox {
+		background-color: var(--acu-white);
+	}
+	.checkbox.check input:checked + .decoy-checkbox:before {
+		content: "";
+		position: absolute;
+		top: 2px;
+		left: 0px;
+		font-size: inherit;
+		width: 0.5em;
+		height: 0.2em;
+		border-radius: 3px;
+		border-left: solid 5px #1a928c;
+		border-bottom: solid 5px #1a928c;
+		transform: rotate(-45deg);
+	}
+	.checkbox.check input:hover + .decoy-checkbox {
+		background-color: #ffffff55;
+	}
+	input:hover + .decoy-checkbox {
+		background-color: #ffffff98;
+	}
+	.checkbox.radio {
+		margin-right: 3%;
+	}
+	.checkbox.radio input + .decoy-checkbox {
+		border-radius: 50%;
+	}
+	.checkbox.radio input:not(:checked):hover + .decoy-checkbox {
+		background-color: #ffffff55;
+	}
+	.checkbox.radio input:checked + .decoy-checkbox {
+		background-color: #0ab4ac;
+	}
+
+.checkbox.radio input:checked + .mild {
+	background-color: #f0e68c;
+}
+.checkbox.radio input:checked + .moderate {
+	background-color: #f08080;
+}
+.checkbox.radio input:checked + .strong {
+	background-color: #eb1f48;
+}
