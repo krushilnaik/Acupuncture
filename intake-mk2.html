@@ -3,27 +3,28 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+		<link rel="shortcut icon" href="assets/internal/images/icons/favicon.png" type="image/x-icon">
 		<title>AHC - Intake II</title>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="assets/js/datedropper.pro.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+		<script src="assets/external/js/jquery.min.js"></script>
+		<script src="assets/external/js/datedropper.pro.min.js"></script>
 
-
-		<link rel="stylesheet" href="assets/css/colors.css">
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link rel="stylesheet" href="assets/css/intake-mk2.css">
-		<link rel="stylesheet" href="assets/css/checkbox.css">
-		<link rel="stylesheet" href="assets/css/animations.css">
-		<link rel="stylesheet" href="assets/css/preloader.css">
+		<link rel="stylesheet" href="assets/internal/css/colors.css">
+		<link rel="stylesheet" href="assets/internal/css/main.css">
+		<link rel="stylesheet" href="assets/internal/css/intake-mk2.css">
+		<link rel="stylesheet" href="assets/internal/css/checkbox-mk2.css">
+		<link rel="stylesheet" href="assets/internal/css/animations.css">
+		<link rel="stylesheet" href="assets/internal/css/preloader.css">
+		<link rel="stylesheet" href="assets/internal/css/drawboard-mk2.css">
 	</head>
 	<body>
 		<!-- Dark/Light Mode -->
 		<button id="reload-css" class="light">
-			<img src="assets/images/icons/dark-mode.png">
+			<img src="assets/internal/images/icons/dark-mode.png">
 		</button>
 
-		<script src="assets/js/theme-handler.js"></script>
+		<script src="assets/internal/js/theme-handler.js"></script>
 
 		<!-- PreLoader -->
 		<div class='preloader'>
@@ -82,15 +83,15 @@
 
 		<div style="height: 80px;"></div>
 
-		<a href="assets/misc/intakeform.pdf" id="pdf-form">View as PDF</a>
+		<a href="assets/internal/misc/intakeform.pdf" id="pdf-form">View as PDF</a>
 
-		<section id="intake-form">
+		<main id="intake-form">
 			<h3 class="title">Health History Questionnaire</h3>
 
 			<div class="form row three">
-				<input class="inline" type="text" name="last-name" id="last-name" placeholder="Last Name">
-				<input class="inline" type="text" name="first-name" id="first-name" placeholder="First Name">
-				<input class="inline" type="text" name="appointment-date" id="appointment-date" placeholder="Appointment Date">
+				<input type="text" name="last-name" id="last-name" placeholder="Last Name">
+				<input type="text" name="first-name" id="first-name" placeholder="First Name">
+				<input type="text" name="appointment-date" id="appointment-date" placeholder="Appointment Date">
 				<script>
 					$('#appointment-date').dateDropper({
 						theme: 'acupuncture',
@@ -154,7 +155,7 @@
 				<input type="text" name="ph-date-of-birth" id="ph-date-of-birth" placeholder="Policy Holder DOB">
 			</div>
 
-			<div class="check-column checkbox check">
+			<div class="checkbox check">
 				<div class="label">I've tried acupuncture before</div>
 				<input type="checkbox" id="have-tried">
 				<div class="decoy-checkbox"></div>
@@ -162,14 +163,219 @@
 
 			<hr>
 
-			<h3 class="title">Tell us what's going on</h3>
+			<h3 class="title small">Tell us what's going on</h3>
 
-			<div class="form row three">
-				<textarea id="main-problems" rows="6" placeholder="For example:&#10;    How severe is the problem?&#10;    How long has this been going on?&#10;    Have you been diagnosed?&#10;    What have you tried so far?"></textarea>
+			<textarea id="main-problems-1" rows="2" placeholder="How are your daily activities (work, sleep, eating, etc.) affected?"></textarea>
+			<textarea id="main-problems-2" rows="2" placeholder="When did you first notice symptoms?"></textarea>
+			<textarea id="main-problems-3" rows="2" placeholder="Do you have a physician's or chiropractor's diagnosis?"></textarea>
+			<textarea id="main-problems-4" rows="2" placeholder="What have you tried?"></textarea>
+
+			<hr>
+
+			<h3 class="title small">Past Medical History</h3>
+
+			<div class="form row two">
+				<div class="form column">
+					<div class="checkbox check">
+						<div class="label">Allergies</div>
+						<input type="checkbox" id="patient-allergies">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Cancer</div>
+						<input type="checkbox" id="patient-cancer">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Diabetes</div>
+						<input type="checkbox" id="patient-diabetes">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Hepatitis</div>
+						<input type="checkbox" id="patient-hepatitis">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">High/low blood pressure</div>
+						<input type="checkbox" id="patient-hbp">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Heart disease</div>
+						<input type="checkbox" id="patient-heart-disease">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Seizure</div>
+						<input type="checkbox" id="patient-seizure">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Rheumatic fever</div>
+						<input type="checkbox" id="patient-rheumatic-fever">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Venereal disease</div>
+						<input type="checkbox" id="venereal-disease">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Thyroid disease</div>
+						<input type="checkbox" id="patient-thyroid-disease">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Birth trauma (prolonged labor, forceps delivery, etc.)</div>
+						<input type="checkbox" id="patient-birth-trauma">
+						<div class="decoy-checkbox"></div>
+					</div>
+				</div>
+
+				<div class="form column">
+					<textarea id="patient-med-history" rows="7" placeholder="Describe other relevant medical history"></textarea>
+					<textarea id="patient-traumas" rows="7" placeholder="Describe accidents or other traumas"></textarea>
+				</div>
 			</div>
-		</section>
 
-		<script src="assets/js/intake-form.js"></script>
+			<hr>
+
+			<h3 class="title small">Family Medical History</h3>
+
+			<div class="form row two">
+				<div class="form column">
+					<div class="checkbox check">
+						<div class="label">Allergies</div>
+						<input class="inline" type="checkbox" id="family-allergies">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Cancer</div>
+						<input class="inline" type="checkbox" id="family-cancer">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Seizures</div>
+						<input class="inline" type="checkbox" id="family-seizures">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Diabetes</div>
+						<input class="inline" type="checkbox" id="family-diabetes">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Heart Disease</div>
+						<input class="inline" type="checkbox" id="family-heart-disease">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Stroke</div>
+						<input class="inline" type="checkbox" id="family-stroke">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">Asthma</div>
+						<input class="inline" type="checkbox" id="family-asthma">
+						<div class="decoy-checkbox"></div>
+					</div>
+					<div class="checkbox check">
+						<div class="label">High/low blood pressure</div>
+						<input class="inline" type="checkbox" id="family-hbp">
+						<div class="decoy-checkbox"></div>
+					</div>
+				</div>
+
+				<div class="form column">
+					<textarea id="family-med-history" rows="7" placeholder="Describe other relevant medical history"></textarea>
+				</div>
+			</div>
+
+			<hr>
+
+			<h3 class="title small">Occupational</h3>
+
+			<textarea id="occupational-stress" rows="6" placeholder="Is your occupation stressful or physically demanding? Do you work with chemicals?"></textarea>
+
+			<hr>
+
+			<h3 class="title small">Lifestyle</h3>
+
+			<div class="form row two">
+				<textarea name="exercise" id="exercise" rows="5" placeholder="Do you exercise? If so, what's your regimen like?"></textarea>
+				<textarea name="diet" id="diet" rows="5" placeholder="What's your diet like? Include what you typically have for breakfast, lunch, and dinner (where applicable)."></textarea>
+			</div>
+
+			<h3 class="title small">Do you have...</h3>
+
+			<div class="form row three" style="margin-left: 10%;">
+				<div class="checkbox check">
+					<div class="label">Alcohol</div>
+					<input class="inline" type="checkbox" name="alcohol">
+					<div class="decoy-checkbox"></div>
+				</div>
+				<div class="checkbox check">
+					<div class="label">Coffee, tea, or soda</div>
+					<input class="inline" type="checkbox" name="soft-drinks">
+					<div class="decoy-checkbox"></div>
+				</div>
+				<div class="checkbox check">
+					<div class="label">Cigarettes</div>
+					<input class="inline" type="checkbox" name="cigarettes">
+					<div class="decoy-checkbox"></div>
+				</div>
+			</div>
+
+			<div class="form column">
+				<textarea id="recent-medications" rows="3" placeholder="What medications have you taken in the last 2 months? (e.g. vitamins, herbs, prescription, over-the-counter, etc.)"></textarea>
+				<textarea id="recent-drugs" rows="3" placeholder="Any non-medical drugs?"></textarea>
+			</div>
+
+			<hr>
+
+			<h3 class="title small">Please mark up bothersome areas</h3>
+
+			<div id="drawboard">
+				<h4>Select "mild", "moderate", or "strong" before clicking on body areas to change severity. Default is "moderate".<br>Use the slider to change mark size.</h6>
+				<div id="brushes">
+					<div class="checkbox radio">
+						<div class="label">Mild</div>
+						<input class="inline" type="radio" id="mild" name="severity" value="#f0e68c">
+						<span class="decoy-checkbox mild"></span>
+					</div>
+					<div class="checkbox radio">
+						<div class="label">Moderate</div>
+						<input class="inline" type="radio" id="moderate" checked="true" name="severity" value="#f08080">
+						<span class="decoy-checkbox moderate"></span>
+					</div>
+					<div class="checkbox radio">
+						<div class="label">Strong</div>
+						<input class="inline" type="radio" id="strong" name="severity" value="#eb1f48">
+						<span class="decoy-checkbox strong"></span>
+					</div>
+
+					<div id="paint-tools">
+						<input class="inline" type="range" id="brush-size" min="10" max="25" value="10">
+						<button id="clear-canvas" type="button" onclick="drawboard.clearRect(0, 0, canvas.width, canvas.height)">Clear canvas</button>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<script src="assets/internal/js/intake-form.js"></script>
+		<script src="assets/internal/js/drawboard.js"></script>
+		<script>
+			let labels = document.querySelectorAll(".label");
+			let inputs = document.querySelectorAll(".label + input");
+
+			for (let i = 0; i < labels.length; i++) {
+				labels[i].addEventListener("click", function() {
+					inputs[i].click()
+				});
+			}
+		</script>
 
 	</body>
 
