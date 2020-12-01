@@ -1,25 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+
 #services-offered {
 	width: 80vw;
 	border-radius: 15px;
 	padding: 15px;
 	margin-left: 10vw;
 	margin-right: 10vw;
-	background-color: var(--acu-green);
 }
 
 .row {
 	display: flex;
 	flex-direction: row;
+	text-indent: 0%;
 }
 
 .service {
-	background-color: var(--darker-than-back);
+	background-color: var(--acu-dark-red);
 	border-radius: 12px;
 	padding: 15px;
 	margin: 10px;
 	color: var(--acu-white);
+	font-size: 18px;
 }
-	.service h3 {
-		margin: 0%;
+
+.service-border {
+	display: inline-block;
+	margin: 0%;
+	position: relative;
+	background-color: var(--acu-green);
+}
+	.service-border .service-title {
+		padding-top: .1em;
+		padding-right: .5em;
+		padding-bottom: .4em;
+		padding-left: .2em;
+		font-family: 'Texturina';
+		font-size: 33px;
+		font-weight: 600;
+		width: max-content;
+		position: absolute;
+		line-height: 1em;
+		background-color: var(--acu-blue);
 		color: var(--acu-dark-white);
+		clip-path: polygon(calc(100% - 0.35em) 0%, 100% 50%, calc(100% - 0.35em) 100%, 0% 100%, 0% 0%);
 	}

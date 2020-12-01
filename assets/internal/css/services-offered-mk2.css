@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* #services-offered {
+	width: 100vw;
+	border-radius: 15px;
+	padding: 15px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+} */
+
+/* .row {
+	display: flex;
+	flex-direction: row;
+	text-indent: 0%;
+} */
+
+.service-group {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: maroon;
+}
+
+.service  {
+	margin-left: auto;
+	width: 95%;
+	padding: 1%;
+	padding-top: 1.2%;
+	background-color: firebrick;
+	font-size: 28px;
+	font-family: 'Josefin Sans', sans-serif;
+	border-radius: 20px;
+}
+
+.service-border {
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 45px;
+	font-weight: 600;
+	display: inline-block;
+	clip-path: polygon(calc(100% - 0.35em) 0%, 100% 50%, calc(100% - 0.35em) 100%, 0% 100%, 0% 0%);
+	background-color: lightskyblue;
+}
+
+.service-border .service-title {
+	line-height: 1em;
+	font: inherit;
+	clip-path: polygon(calc(100% - 0.35em) 0%, 100% 50%, calc(100% - 0.35em) 100%, 0% 100%, 0% 0%);
+	padding-left: .2em;
+	padding-top: .6%;
+	background-color: lightcoral;
+}
